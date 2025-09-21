@@ -1,179 +1,117 @@
-import React, { useState, useEffect } from 'react';
-import { Trophy, Star, Calendar, TrendingUp, Award, Zap } from 'lucide-react';
+import React, { useState, useCallback } from 'react';
+import { Trophy, Star, Calendar, TrendingUp, Award, Zap, Search, Filter, Plus } from 'lucide-react';
 import { usePokemonRewards } from '../hooks/usePokemonRewards';
+import { useWorkouts } from '../hooks/useWorkouts';
 import AnimatedPokemon from './AnimatedPokemon';
+import TestEvolutionButton from './TestEvolutionButton';
 
-// Pokemon-specific motivational messages (1-151)
-const getMotivationForPokemon = (pokemonId: number): string => {
-  const motivations = [
-    "🌱 Bulbasaur Seed! You planted the seeds of greatness!",
-    "🌿 Ivysaur Growth! You're evolving into excellence!",
-    "🌺 Venusaur Bloom! You've blossomed into a champion!",
-    "🔥 Charmander Spark! You ignited your inner fire!",
-    "🔥 Charmeleon Flame! You're burning bright with determination!",
-    "🐉 Charizard Roar! You soared to legendary heights!",
-    "💧 Squirtle Squad! You made waves in the gym!",
-    "🌊 Wartortle Shell! Your defense is impenetrable!",
-    "💪 Blastoise Cannon! You blasted through every limit!",
-    "🐛 Caterpie Crawl! Small steps lead to big gains!",
-    "🛡️ Metapod Harden! You're building unbreakable strength!",
-    "🦋 Butterfree Flight! You've transformed beautifully!",
-    "🐝 Weedle Sting! You packed a powerful punch!",
-    "⚡ Kakuna Shock! You're charged with energy!",
-    "🐝 Beedrill Drill! You pierced through every challenge!",
-    "🐦 Pidgey Fly! You soared above expectations!",
-    "🦅 Pidgeotto Wing! You're spreading your wings wide!",
-    "🦅 Pidgeot Gust! You created a whirlwind of success!",
-    "🐭 Rattata Quick! Your speed was incredible!",
-    "🐭 Raticate Bite! You sank your teeth into victory!",
-    "🐦 Spearow Peck! You struck with precision!",
-    "🦅 Fearow Keen! Your focus was razor sharp!",
-    "🐍 Ekans Coil! You wrapped up that workout perfectly!",
-    "🐍 Arbok Intimidate! You commanded respect in the gym!",
-    "⚡ Pikachu Power! You're absolutely electrifying!",
-    "⚡ Raichu Thunder! You brought the storm of gains!",
-    "🏜️ Sandshrew Dig! You dug deep for that strength!",
-    "🏜️ Sandslash Slash! You cut through every obstacle!",
-    "♀️ Nidoran♀ Poison! You're toxic to weakness!",
-    "👑 Nidorina Queen! You ruled that workout!",
-    "👑 Nidoqueen Majesty! You're the queen of gains!",
-    "♂️ Nidoran♂ Horn! You charged ahead fearlessly!",
-    "🦏 Nidorino Fury! Your intensity was unstoppable!",
-    "👑 Nidoking Power! You're the king of the gym!",
-    "🧚 Clefairy Magic! You made the impossible look easy!",
-    "🌙 Clefable Moonlight! You illuminated greatness!",
-    "🦊 Vulpix Fire! You brought the heat to training!",
-    "🦊 Ninetales Mystical! Your performance was legendary!",
-    "🎤 Jigglypuff Song! You hit all the right notes!",
-    "🎵 Wigglytuff Melody! Your rhythm was perfect!",
-    "🦇 Zubat Flight! You navigated through challenges!",
-    "🦇 Golbat Bite! You sank your fangs into success!",
-    "🌱 Oddish Root! You're grounded in strength!",
-    "🌺 Gloom Bloom! You're flowering into greatness!",
-    "🌻 Vileplume Petal! You're beautiful and powerful!",
-    "🍄 Paras Spore! You spread excellence everywhere!",
-    "🍄 Parasect Mushroom! You're growing stronger daily!",
-    "🐛 Venonat Eyes! You saw victory coming!",
-    "🦋 Venomoth Dust! You scattered weakness to the wind!",
-    "🕳️ Diglett Tunnel! You dug deep for that power!",
-    "🕳️ Dugtrio Triple! You tripled your efforts!",
-    "🐱 Meowth Coin! You struck gold in the gym!",
-    "🐱 Persian Scratch! You clawed your way to victory!",
-    "🦆 Psyduck Psychic! Your mental game was strong!",
-    "🦆 Golduck Swim! You dove deep into excellence!",
-    "🐵 Mankey Rage! Your fury fueled your success!",
-    "🐵 Primeape Anger! You channeled rage into power!",
-    "🐕 Growlithe Loyal! Your dedication never wavers!",
-    "🐕 Arcanine Legendary! You're a mythical athlete!",
-    "🐸 Poliwag Tadpole! You're swimming toward greatness!",
-    "🐸 Poliwhirl Whirl! You spun circles around weakness!",
-    "🐸 Poliwrath Punch! You packed a powerful blow!",
-    "🧠 Abra Teleport! You moved at the speed of thought!",
-    "🧠 Kadabra Spoon! You bent reality with your will!",
-    "🧠 Alakazam Psychic! Your mind power is unmatched!",
-    "💪 Machop Muscle! You're building serious strength!",
-    "💪 Machoke Flex! Your muscles are impressive!",
-    "💪 Machamp Champion! You're the ultimate fighter!",
-    "🌱 Bellsprout Root! You're growing stronger daily!",
-    "🌱 Weepinbell Bell! You rang in victory!",
-    "🌱 Victreebel Trap! You caught success perfectly!",
-    "🌊 Tentacool Float! You flowed through that workout!",
-    "🌊 Tentacruel Cruel! You were merciless to weakness!",
-    "🗿 Geodude Rock! You're solid as a mountain!",
-    "🗿 Graveler Roll! You rolled over every obstacle!",
-    "🗿 Golem Explosion! You blew away expectations!",
-    "🐴 Ponyta Gallop! You raced toward victory!",
-    "🐴 Rapidash Speed! You blazed through that workout!",
-    "🐌 Slowpoke Slow! Steady progress wins the race!",
-    "🐌 Slowbro Bro! You're a reliable champion!",
-    "⚡ Magnemite Magnet! You attracted success!",
-    "⚡ Magneton Triple! You tripled your magnetic power!",
-    "🦆 Farfetch'd Leek! You're uniquely awesome!",
-    "🐦 Doduo Double! You doubled your efforts!",
-    "🐦 Dodrio Triple! You tripled your speed!",
-    "🦭 Seel Seal! You sealed the deal on greatness!",
-    "🦭 Dewgong Song! Your performance was music!",
-    "💜 Grimer Sludge! You turned mess into success!",
-    "💜 Muk Toxic! You're poisonous to mediocrity!",
-    "🐚 Shellder Shell! Your defense is legendary!",
-    "🐚 Cloyster Spike! You're sharp and dangerous!",
-    "👻 Gastly Ghost! You spooked weakness away!",
-    "👻 Haunter Haunt! You haunted every rep!",
-    "👻 Gengar Shadow! You shadowed perfection!",
-    "🐍 Onix Rock! You're unbreakable as stone!",
-    "😴 Drowzee Sleep! You dreamed of victory!",
-    "😴 Hypno Hypnosis! You mesmerized the competition!",
-    "🦀 Krabby Crab! You pinched victory from defeat!",
-    "🦀 Kingler King! You're the king of crustaceans!",
-    "⚡ Voltorb Ball! You rolled to victory!",
-    "⚡ Electrode Explosion! You exploded with energy!",
-    "🥚 Exeggcute Egg! You're full of potential!",
-    "🌴 Exeggutor Palm! You're tall and mighty!",
-    "💀 Cubone Bone! You're tough to the core!",
-    "💀 Marowak Warrior! You're a bone-wielding champion!",
-    "🥋 Hitmonlee Kick! Your kicks were legendary!",
-    "👊 Hitmonchan Punch! You packed a powerful punch!",
-    "👅 Lickitung Lick! You tasted sweet victory!",
-    "💨 Koffing Gas! You cleared the air of doubt!",
-    "💨 Weezing Poison! You're toxic to weakness!",
-    "🦏 Rhyhorn Charge! You charged toward greatness!",
-    "🦏 Rhydon Drill! You drilled through every barrier!",
-    "🌸 Chansey Heal! You healed all doubts about your power!",
-    "🌿 Tangela Vine! You're tangled up in success!",
-    "🦘 Kangaskhan Pouch! You're protective of your gains!",
-    "🌊 Horsea Sea! You rode the waves of victory!",
-    "🐉 Seadra Dragon! You're a sea dragon of strength!",
-    "🐠 Goldeen Gold! You're worth your weight in gold!",
-    "🐠 Seaking King! You're the king of the sea!",
-    "⭐ Staryu Star! You're a shining star!",
-    "⭐ Starmie Gem! You're a precious gem of power!",
-    "🤡 Mr. Mime Mime! You performed flawlessly!",
-    "🗡️ Scyther Slash! You cut through every challenge!",
-    "👄 Jynx Kiss! You kissed victory on the lips!",
-    "⚡ Electabuzz Buzz! You're buzzing with energy!",
-    "🔥 Magmar Fire! You brought the heat of champions!",
-    "🪲 Pinsir Pincer! You gripped victory tightly!",
-    "🐂 Tauros Bull! You charged like a champion!",
-    "🐟 Magikarp Splash! Even small efforts make waves!",
-    "🐉 Gyarados Rage! You unleashed legendary fury!",
-    "🌊 Lapras Gentle! You're gentle but incredibly strong!",
-    "💧 Ditto Transform! You adapted perfectly!",
-    "🦊 Eevee Evolution! You're full of potential!",
-    "💧 Vaporeon Water! You flowed like liquid power!",
-    "⚡ Jolteon Lightning! You struck like lightning!",
-    "🔥 Flareon Fire! You burned bright with passion!",
-    "🤖 Porygon Digital! You computed victory perfectly!",
-    "🐚 Omanyte Ancient! You're timeless in your strength!",
-    "🐚 Omastar Star! You're an ancient star of power!",
-    "🦀 Kabuto Fossil! You're built to last!",
-    "🦀 Kabutops Scythe! You cut through competition!",
-    "🦅 Aerodactyl Prehistoric! You're ancient and powerful!",
-    "😴 Snorlax Sleep! You're powerfully peaceful!",
-    "🧊 Articuno Ice! You're cool under pressure!",
-    "⚡ Zapdos Thunder! You brought divine lightning!",
-    "🔥 Moltres Fire! You're a legendary flame!",
-    "🐉 Dratini Dragon! You're a baby dragon with big dreams!",
-    "🐉 Dragonair Air! You're graceful and powerful!",
-    "🐉 Dragonite Dragon! You're a gentle giant of strength!",
-    "🧠 Mewtwo Psychic! Your mental power is unmatched!",
-    "✨ Mew Mythical! You're as rare and special as Mew!"
+// Generate motivational messages for all Pokemon (extended Pokedex)
+const getMotivationForPokemon = (pokemon: any): string => {
+  const pokemonName = pokemon.name || 'Pokemon';
+  const pokemonId = pokemon.id || 1;
+
+  // Base motivational templates
+  const templates = [
+    `🌟 ${pokemonName}! You're absolutely incredible!`,
+    `💪 ${pokemonName}! Your strength knows no bounds!`,
+    `🔥 ${pokemonName}! You're burning bright with determination!`,
+    `⚡ ${pokemonName}! Your energy is electric!`,
+    `🛡️ ${pokemonName}! You're unbreakable and resilient!`,
+    `🏆 ${pokemonName}! You're a champion in every way!`,
+    `🚀 ${pokemonName}! You're reaching legendary heights!`,
+    `💎 ${pokemonName}! You're truly one of a kind!`,
+    `🌈 ${pokemonName}! You're colorful and magnificent!`,
+    `⭐ ${pokemonName}! You're shining bright!`
   ];
-  
-  // Return motivation for Pokemon ID (1-151), fallback for invalid IDs
-  return motivations[pokemonId - 1] || "🏀 Legendary! You're absolutely incredible!";
+
+  // Special messages for legendary Pokemon (approximate IDs)
+  const legendaryIds = [144, 145, 146, 150, 151, 243, 244, 245, 249, 250, 251, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647, 648, 649, 716, 717, 718, 719, 720, 721, 789, 790, 791, 792, 800, 807, 808, 809];
+
+  if (legendaryIds.includes(pokemonId)) {
+    return `🌟 LEGENDARY ${pokemonName}! You're a mythical force of nature!`;
+  }
+
+  // Use Pokemon name hash for consistent but varied messages
+  const hash = pokemonName.split('').reduce((a: number, b: string) => {
+    a = ((a << 5) - a) + b.charCodeAt(0);
+    return a & a;
+  }, 0);
+
+  return templates[Math.abs(hash) % templates.length];
 };
 
-const PokemonCollection: React.FC = () => {
-  const { rewards, getRewardStats } = usePokemonRewards();
-  const [selectedPokemon, setSelectedPokemon] = useState<any>(null);
-  const [filter, setFilter] = useState<'all' | 'workout' | 'milestone' | 'streak'>('all');
-  const [showAllPokemon, setShowAllPokemon] = useState(false);
+interface PokemonCollectionProps {
+  rewards: any[];
+  addTestPokemon?: (pokemonId: number, pokemonName: string) => Promise<void>;
+  onEvolutionTriggered?: (fromPokemon: any, toPokemon: any, reason: string) => void;
+}
 
-  const stats = getRewardStats();
+const PokemonCollection: React.FC<PokemonCollectionProps> = ({ rewards, addTestPokemon, onEvolutionTriggered }) => {
+  // Debug log to see rewards updates
+  React.useEffect(() => {
+    console.log('Pokemon rewards updated:', rewards);
+  }, [rewards]);
+
+  // Helper function to calculate reward stats from the rewards prop
+  const getRewardStats = useCallback(() => {
+    const now = new Date();
+    const oneWeekAgo = new Date(now.getTime() - 7 * 24 * 60 * 1000);
+    
+    const thisWeek = rewards.filter(reward => 
+      new Date(reward.timestamp) >= oneWeekAgo
+    ).length;
+    
+    const uniquePokemon = new Set(rewards.map(reward => reward.pokemon.id)).size;
+    const streakRewards = rewards.filter(reward => reward.type === 'streak').length;
+    
+    // Show up to 12 recent rewards instead of just 5
+    const recentRewards = rewards.slice(0, 12);
+    
+    return {
+      totalRewards: rewards.length,
+      uniquePokemon,
+      thisWeek,
+      streakRewards,
+      recentRewards
+    };
+  }, [rewards]);
+  const [selectedPokemon, setSelectedPokemon] = useState<any>(null);
+  const [filter, setFilter] = useState<'all' | 'workout' | 'milestone' | 'streak' | 'evolution'>('all');
+  const [showAllPokemon, setShowAllPokemon] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [typeFilter, setTypeFilter] = useState<string>('all');
+  const [showFilters, setShowFilters] = useState(false);
+
+  const stats = {
+    totalRewards: rewards.length,
+    uniquePokemon: new Set(rewards.map(reward => reward.pokemon.id)).size,
+    thisWeek: rewards.filter(reward => {
+      const now = new Date();
+      const oneWeekAgo = new Date(now.getTime() - 7 * 24 * 60 * 1000);
+      return new Date(reward.timestamp) >= oneWeekAgo;
+    }).length,
+    streakRewards: rewards.filter(reward => reward.type === 'streak').length,
+    recentRewards: rewards.slice(0, 12)
+  };
 
   const filteredRewards = rewards.filter(reward => {
-    if (filter === 'all') return true;
-    return reward.type === filter;
+    // Type filter (workout/milestone/streak)
+    if (filter !== 'all' && reward.type !== filter) return false;
+
+    // Search filter
+    if (searchQuery) {
+      const query = searchQuery.toLowerCase();
+      const pokemonName = reward.pokemon.name?.toLowerCase() || '';
+      if (!pokemonName.includes(query)) return false;
+    }
+
+    // Pokemon type filter
+    if (typeFilter !== 'all') {
+      const pokemonTypes = reward.pokemon.types;
+      if (!pokemonTypes.includes(typeFilter)) return false;
+    }
+
+    return true;
   });
 
   const getTypeIcon = (type: string) => {
@@ -181,6 +119,7 @@ const PokemonCollection: React.FC = () => {
       case 'workout': return <Zap className="h-4 w-4" />;
       case 'milestone': return <Trophy className="h-4 w-4" />;
       case 'streak': return <Award className="h-4 w-4" />;
+      case 'evolution': return <TrendingUp className="h-4 w-4" />;
       default: return <Star className="h-4 w-4" />;
     }
   };
@@ -190,6 +129,7 @@ const PokemonCollection: React.FC = () => {
       case 'workout': return 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200';
       case 'milestone': return 'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200';
       case 'streak': return 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200';
+      case 'evolution': return 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200';
       default: return 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200';
     }
   };
@@ -249,29 +189,106 @@ const PokemonCollection: React.FC = () => {
         </div>
       </div>
 
-      {/* Filter Tabs */}
-      <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm p-1">
-        <div className="flex space-x-1">
-          {[
-            { key: 'all', label: 'All Pokémon', icon: Star },
-            { key: 'workout', label: 'Workout Rewards', icon: Zap },
-            { key: 'milestone', label: 'Milestones', icon: Trophy },
-            { key: 'streak', label: 'Streaks', icon: Award }
-          ].map(({ key, label, icon: Icon }) => (
-            <button
-              key={key}
-              onClick={() => setFilter(key as any)}
-              className={`flex-1 flex items-center justify-center px-4 py-2 rounded-md text-sm font-medium transition-colors ${
-                filter === key
-                  ? 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300'
-                  : 'text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-700'
-              }`}
-            >
-              <Icon className="h-4 w-4 mr-2" />
-              {label}
-            </button>
-          ))}
+      {/* Search and Filter Controls */}
+      <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm p-4 space-y-4">
+        {/* Search Bar */}
+        <div className="relative">
+          <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
+          <input
+            type="text"
+            placeholder="Search Pokémon..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="w-full pl-10 pr-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+          />
         </div>
+
+        <div className="flex flex-col sm:flex-row gap-4">
+          {/* Reward Type Filter */}
+          <div className="flex-1">
+            <div className="flex space-x-1">
+              {[
+                { key: 'all', label: 'All', icon: Star },
+                { key: 'workout', label: 'Workout', icon: Zap },
+                { key: 'milestone', label: 'Milestone', icon: Trophy },
+                { key: 'streak', label: 'Streak', icon: Award },
+                { key: 'evolution', label: 'Evolution', icon: TrendingUp }
+              ].map(({ key, label, icon: Icon }) => (
+                <button
+                  key={key}
+                  onClick={() => setFilter(key as any)}
+                  className={`flex-1 flex items-center justify-center px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                    filter === key
+                      ? 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300'
+                      : 'text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-700'
+                  }`}
+                >
+                  <Icon className="h-4 w-4 mr-1" />
+                  {label}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Controls */}
+          <div className="flex items-center space-x-2">
+            {/* Pokemon Type Filter Toggle */}
+            <button
+              onClick={() => setShowFilters(!showFilters)}
+              className="flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+            >
+              <Filter className="h-4 w-4 mr-2" />
+              Type Filter
+            </button>
+
+            {/* Add Test Weedle Button */}
+            <button
+              onClick={async () => {
+                if (addTestPokemon) {
+                  try {
+                    await addTestPokemon(13, 'weedle');
+                    console.log('Test Weedle added successfully');
+                  } catch (error) {
+                    console.error('Failed to add Test Weedle:', error);
+                  }
+                } else {
+                  console.log('addTestPokemon function not available');
+                }
+              }}
+              className="flex items-center px-4 py-2 bg-green-500 dark:bg-green-600 text-white rounded-lg hover:bg-green-600 dark:hover:bg-green-700 transition-colors"
+            >
+              <Plus className="h-4 w-4 mr-2" />
+              Add Weedle
+            </button>
+
+            {/* Test Evolution Button */}
+            <TestEvolutionButton onEvolutionTriggered={onEvolutionTriggered || (() => {})} />
+          </div>
+        </div>
+
+        {/* Pokemon Type Filters */}
+        {showFilters && (
+          <div className="grid grid-cols-3 sm:grid-cols-6 gap-2 pt-2 border-t border-gray-200 dark:border-gray-700">
+            {[
+              'all', 'normal', 'fire', 'water', 'electric', 'grass',
+              'ice', 'fighting', 'poison', 'ground', 'flying', 'psychic',
+              'bug', 'rock', 'ghost', 'dragon', 'dark', 'steel',
+              'fairy'
+            ].map(type => (
+              <button
+                key={type}
+                onClick={() => setTypeFilter(type)}
+                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors capitalize ${
+                  typeFilter === type
+                    ? 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300'
+                    : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                }`}
+              >
+                {type === 'all' ? 'All Types' : type}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* Pokemon Grid */}
@@ -292,7 +309,6 @@ const PokemonCollection: React.FC = () => {
           </button>
         </div>
       ) : (
-        <>
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm p-4">
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
@@ -315,17 +331,25 @@ const PokemonCollection: React.FC = () => {
             </div>
             
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
-              {(showAllPokemon ? filteredRewards : stats.recentRewards).map((reward, index) => (
+              {(showAllPokemon ? filteredRewards : filteredRewards.slice(0, 12)).map((reward, index) => (
                 <div
                   key={`${reward.pokemon.id}-${reward.timestamp}-${index}`}
                   onClick={() => setSelectedPokemon(reward)}
+                  onKeyDown={e => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.preventDefault();
+                      setSelectedPokemon(reward);
+                    }
+                  }}
+                  role="button"
+                  tabIndex={0}
                   className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-700 dark:to-gray-800 rounded-lg p-4 cursor-pointer hover:shadow-lg transition-all duration-200 hover:scale-105"
                 >
                   <div className="text-center">
                     <div className="text-4xl mb-2">
                       <AnimatedPokemon 
-                        sprite={reward.pokemon.sprite}
-                        animatedSprite={reward.pokemon.animatedSprite}
+                        sprite={reward.pokemon.sprites?.static}
+                        animatedSprite={reward.pokemon.sprites?.animated}
                         name={reward.pokemon.name}
                         size="medium"
                       />
@@ -345,7 +369,6 @@ const PokemonCollection: React.FC = () => {
               ))}
             </div>
           </div>
-        </>
       )}
 
       {/* Pokemon Detail Modal */}
@@ -355,8 +378,8 @@ const PokemonCollection: React.FC = () => {
             <div className="text-center mb-6">
               <div className="text-8xl mb-4">
                 <AnimatedPokemon 
-                  sprite={selectedPokemon.pokemon.sprite}
-                  animatedSprite={selectedPokemon.pokemon.animatedSprite}
+                  sprite={selectedPokemon.pokemon.sprites?.static}
+                  animatedSprite={selectedPokemon.pokemon.sprites?.animated}
                   name={selectedPokemon.pokemon.name}
                   size="large"
                 />
@@ -395,7 +418,7 @@ const PokemonCollection: React.FC = () => {
 
               <div className="bg-blue-50 dark:bg-blue-900 rounded-lg p-4">
                 <p className="text-blue-800 dark:text-blue-200 text-sm text-center">
-                  {getMotivationForPokemon(selectedPokemon.pokemon.id)}
+                  {getMotivationForPokemon(selectedPokemon.pokemon)}
                 </p>
               </div>
             </div>

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Workout, WorkoutPlan, WorkoutStats } from '../types/workout';
 import { storage } from '../utils/storage';
 
-export const useWorkouts = (onWorkoutComplete?: () => void, onStreakReward?: (days: number) => void) => {
+export const useWorkouts = (onWorkoutComplete?: (workoutId: string) => void, onStreakReward?: (days: number) => void) => {
   const [workouts, setWorkouts] = useState<Workout[]>([]);
   const [plans, setPlans] = useState<WorkoutPlan[]>([]);
   const [stats, setStats] = useState<WorkoutStats | null>(null);
@@ -20,7 +20,7 @@ export const useWorkouts = (onWorkoutComplete?: () => void, onStreakReward?: (da
       setPlans(storage.getPlans());
       setStats(storage.getStats());
     } catch (error) {
-      console.error('Error loading workout data:', error);
+      // Silently handle data loading errors
     } finally {
       setLoading(false);
     }
@@ -28,36 +28,27 @@ export const useWorkouts = (onWorkoutComplete?: () => void, onStreakReward?: (da
 
   const saveWorkout = (workout: Workout) => {
     try {
-      console.log('🏋️ [DEBUG] Attempting to save workout:', workout);
       storage.saveWorkout(workout);
       setWorkouts(storage.getWorkouts());
       setStats(storage.getStats());
-      
+
       // Trigger Pokemon reward for completed workouts
-      console.log('✅ [DEBUG] Workout completed status:', workout.completed);
       if (workout.completed) {
         if (onWorkoutComplete) {
-          console.log('🎯 [DEBUG] onWorkoutComplete callback exists, calling it now...');
           onWorkoutComplete(workout.id); // Pass workout ID to prevent duplicates
-        } else {
-          console.log('❌ [DEBUG] onWorkoutComplete callback is null/undefined!');
         }
-        
+
         // Check for streak rewards
         const recentWorkouts = getRecentWorkouts(7);
         const streak = calculateCurrentStreak(recentWorkouts);
-        console.log('🔥 [DEBUG] Current streak:', streak);
         if (streak > 0 && streak % 3 === 0) { // Reward every 3 days
           if (onStreakReward) {
-            console.log('🏆 [DEBUG] onStreakReward callback triggered for', streak, 'day streak');
             setTimeout(() => onStreakReward(streak), 2000); // Delay second reward
           }
         }
-      } else {
-        console.log('⚠️ [DEBUG] Workout not marked as completed, no Pokemon reward');
       }
     } catch (error) {
-      console.error('Error saving workout:', error);
+      // Silently handle workout saving errors
     }
   };
 
@@ -67,7 +58,7 @@ export const useWorkouts = (onWorkoutComplete?: () => void, onStreakReward?: (da
       setWorkouts(storage.getWorkouts());
       setStats(storage.getStats());
     } catch (error) {
-      console.error('Error deleting workout:', error);
+      // Silently handle workout deletion errors
     }
   };
 
@@ -76,7 +67,7 @@ export const useWorkouts = (onWorkoutComplete?: () => void, onStreakReward?: (da
       storage.savePlan(plan);
       setPlans(storage.getPlans());
     } catch (error) {
-      console.error('Error saving plan:', error);
+      // Silently handle plan saving errors
     }
   };
 
@@ -85,7 +76,7 @@ export const useWorkouts = (onWorkoutComplete?: () => void, onStreakReward?: (da
       storage.deletePlan(id);
       setPlans(storage.getPlans());
     } catch (error) {
-      console.error('Error deleting plan:', error);
+      // Silently handle plan deletion errors
     }
   };
 

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Home, Dumbbell, Calendar, BarChart3, Menu, X, Target, Sun, Moon } from 'lucide-react';
+import { Home, Dumbbell, Calendar, BarChart3, Menu, X, Target, Sun, Moon, Database } from 'lucide-react';
 import { ThemeProvider, useTheme } from './contexts/ThemeContext';
+import ErrorBoundary from './components/ErrorBoundary';
 import Dashboard from './components/Dashboard';
 import WorkoutTracker from './components/WorkoutTracker';
 import ExercisePlanner from './components/ExercisePlanner';
@@ -8,29 +9,59 @@ import Statistics from './components/Statistics';
 import SkillDevelopment from './components/SkillDevelopment';
 import PokemonCollection from './components/PokemonCollection';
 import PokemonReward from './components/PokemonReward';
+import EvolutionModal from './components/EvolutionModal';
+import DataManagement from './components/DataManagement';
 import { usePokemonRewards } from './hooks/usePokemonRewards';
 import { useWorkouts } from './hooks/useWorkouts';
 import { useSkills } from './hooks/useSkills';
 import { EXERCISE_DATABASE } from './utils/exercises';
 
-type ActiveTab = 'dashboard' | 'workout' | 'planner' | 'stats' | 'skills' | 'pokemon';
+type ActiveTab = 'dashboard' | 'workout' | 'planner' | 'stats' | 'skills' | 'pokemon' | 'data';
+
+// Separate component for Pokemon icon to avoid S6478 error
+const PokemonIcon = () => <span className="text-lg">🏀</span>;
 
 function AppContent() {
   const [activeTab, setActiveTab] = useState<ActiveTab>('dashboard');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [currentEvolution, setCurrentEvolution] = useState<{
+    fromPokemon: any;
+    toPokemon: any;
+    reason: string;
+  } | null>(null);
   const { theme, toggleTheme } = useTheme();
 
-  // Initialize Pokemon rewards
+  // Initialize workout hook with pokemon callbacks
+  const workoutHook = useWorkouts((workoutId) => {
+    console.log('🎯 [DEBUG] Workout completion callback triggered in App.tsx');
+    triggerWorkoutReward(workoutId);
+  }, (days) => {
+    console.log('🔥 [DEBUG] Streak reward callback triggered in App.tsx for', days, 'days');
+    triggerStreakReward(days);
+  });
+
+  // Initialize Pokemon rewards with actual workout data
   const {
     rewards,
     currentReward,
-    isLoading: pokemonLoading,
     triggerWorkoutReward,
     triggerMilestoneReward,
     triggerStreakReward,
     dismissCurrentReward,
-    getRewardStats
-  } = usePokemonRewards();
+    addTestPokemon
+  } = usePokemonRewards({
+    workouts: workoutHook.workouts,
+    onWorkoutComplete: () => {
+      console.log('🎯 [DEBUG] Workout completion callback triggered in App.tsx');
+    },
+    onStreakAchieved: () => {
+      console.log('🔥 [DEBUG] Streak reward callback triggered in App.tsx');
+    },
+    onEvolutionTriggered: (fromPokemon, toPokemon, reason) => {
+      console.log('🔄 [DEBUG] Evolution triggered:', fromPokemon.name, '->', toPokemon.name, reason);
+      setCurrentEvolution({ fromPokemon, toPokemon, reason });
+    }
+  });
 
   // Debug current reward state
   React.useEffect(() => {
@@ -41,27 +72,18 @@ function AppContent() {
       console.log('😴 [DEBUG] No current reward, modal should be hidden');
     }
   }, [currentReward]);
-  
-  // Initialize workout hook with pokemon callbacks
-  const workoutHook = useWorkouts((workoutId) => {
-    console.log('🎯 [DEBUG] Workout completion callback triggered in App.tsx');
-    triggerWorkoutReward(workoutId);
-  }, (days) => {
-    console.log('🔥 [DEBUG] Streak reward callback triggered in App.tsx for', days, 'days');
-    triggerStreakReward(days);
-  });
 
   // Initialize skills hook with pokemon callbacks
   const skillHook = useSkills(triggerMilestoneReward);
 
   useEffect(() => {
     // Listen for tab changes from components
-    const handleTabChange = (event) => {
+    const handleTabChange = (event: any) => {
       if (event.detail?.tab) {
         setActiveTab(event.detail.tab);
       }
     };
-    
+
     window.addEventListener('changeTab', handleTabChange);
 
     return () => {
@@ -75,7 +97,8 @@ function AppContent() {
     { id: 'planner' as ActiveTab, name: 'Plans', icon: Calendar },
     { id: 'stats' as ActiveTab, name: 'Stats', icon: BarChart3 },
     { id: 'skills' as ActiveTab, name: 'Skills', icon: Target },
-    { id: 'pokemon' as ActiveTab, name: 'Pokémon', icon: () => <span className="text-lg">🏀</span> },
+    { id: 'pokemon' as ActiveTab, name: 'Pokémon', icon: PokemonIcon },
+    { id: 'data' as ActiveTab, name: 'Data', icon: Database },
   ];
 
   const renderActiveComponent = () => {
@@ -91,7 +114,16 @@ function AppContent() {
       case 'skills':
         return <SkillDevelopment {...skillHook} EXERCISE_DATABASE={EXERCISE_DATABASE} />;
       case 'pokemon':
-        return <PokemonCollection />;
+        return <PokemonCollection 
+          rewards={rewards}
+          addTestPokemon={addTestPokemon}
+          onEvolutionTriggered={(fromPokemon, toPokemon, reason) => {
+            console.log('🔄 [DEBUG] Evolution triggered:', fromPokemon.name, '->', toPokemon.name, reason);
+            setCurrentEvolution({ fromPokemon, toPokemon, reason });
+          }} 
+        />;
+      case 'data':
+        return <DataManagement />;
       default:
         return <Dashboard {...workoutHook} />;
     }
@@ -245,9 +277,23 @@ function AppContent() {
 
       {/* Pokemon Reward Modal */}
       {currentReward && (
-        <PokemonReward 
-          reward={currentReward} 
-          onDismiss={dismissCurrentReward} 
+        <PokemonReward
+          reward={currentReward}
+          onDismiss={dismissCurrentReward}
+        />
+      )}
+
+      {/* Evolution Modal */}
+      {currentEvolution && (
+        <EvolutionModal
+          fromPokemon={currentEvolution.fromPokemon}
+          toPokemon={currentEvolution.toPokemon}
+          reason={currentEvolution.reason}
+          onClose={() => setCurrentEvolution(null)}
+          onEvolutionTriggered={(fromPokemon, toPokemon, reason) => {
+            console.log('🔄 [DEBUG] Evolution triggered from modal:', fromPokemon.name, '->', toPokemon.name, reason);
+            setCurrentEvolution({ fromPokemon, toPokemon, reason });
+          }}
         />
       )}
     </div>
@@ -256,9 +302,11 @@ function AppContent() {
 
 function App() {
   return (
-    <ThemeProvider>
-      <AppContent />
-    </ThemeProvider>
+    <ErrorBoundary>
+      <ThemeProvider>
+        <AppContent />
+      </ThemeProvider>
+    </ErrorBoundary>
   );
 }
 

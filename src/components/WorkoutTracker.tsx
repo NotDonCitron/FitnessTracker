@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Play, Pause, Square, Plus, Minus, Clock, Target, Trash2 } from 'lucide-react';
+import { Play, Pause, Square, Plus, Clock, Target, Trash2 } from 'lucide-react';
 import { Exercise, WorkoutSet, Workout } from '../types/workout';
 import { EXERCISE_DATABASE } from '../utils/exercises';
+import { getAllSets, getCompletedSetCount, migrateWorkoutData } from '../utils/workoutHelpers';
 import Timer from './Timer';
 
 interface WorkoutTrackerProps {
@@ -68,13 +69,16 @@ const WorkoutTracker: React.FC<WorkoutTrackerProps> = ({
   const startNewWorkout = () => {
     const newWorkout: Workout = {
       id: Date.now().toString(),
+      name: `Workout ${new Date().toLocaleDateString()}`,
       date: new Date().toISOString(),
       exercises: [],
+      sets: [], // Initialize legacy format for backward compatibility
       duration: 0,
       totalSets: 0,
       totalReps: 0,
       totalWeight: 0,
-      notes: ''
+      notes: '',
+      completed: false
     };
     setActiveWorkout(newWorkout);
   };
@@ -118,20 +122,26 @@ const WorkoutTracker: React.FC<WorkoutTrackerProps> = ({
     if (!activeWorkout || !selectedExercise) return;
 
     const newSet: WorkoutSet = {
+      id: Date.now().toString() + Math.random().toString(),
       setNumber: currentSet,
-      weight: weight ? parseFloat(weight) : undefined,
-      reps: reps ? parseInt(reps) : undefined,
+      exerciseId: selectedExercise.id,
+      weight: weight ? parseFloat(weight) : 0,
+      reps: reps ? parseInt(reps) : 0,
       duration: duration ? parseInt(duration) : undefined,
+      rest: 90, // Default rest time in seconds
       completed: true
     };
 
+    // Update the new hierarchical format
     const updatedWorkout = {
       ...activeWorkout,
       exercises: activeWorkout.exercises.map(ex => 
         ex.exercise.id === selectedExercise.id
           ? { ...ex, sets: [...ex.sets, newSet] }
           : ex
-      )
+      ),
+      // Also add to legacy format for backward compatibility
+      sets: [...(activeWorkout.sets || []), newSet]
     };
 
     setActiveWorkout(updatedWorkout);
@@ -149,13 +159,24 @@ const WorkoutTracker: React.FC<WorkoutTrackerProps> = ({
   const removeSet = (exerciseId: string, setIndex: number) => {
     if (!activeWorkout) return;
 
+    // Find the set to remove from the hierarchical format
+    let setToRemove: WorkoutSet | null = null;
+    const exerciseData = activeWorkout.exercises.find(ex => ex.exercise.id === exerciseId);
+    if (exerciseData && exerciseData.sets[setIndex]) {
+      setToRemove = exerciseData.sets[setIndex];
+    }
+
     const updatedWorkout = {
       ...activeWorkout,
       exercises: activeWorkout.exercises.map(ex => 
         ex.exercise.id === exerciseId
           ? { ...ex, sets: ex.sets.filter((_, index) => index !== setIndex) }
           : ex
-      )
+      ),
+      // Also remove from legacy format for consistency
+      sets: setToRemove 
+        ? (activeWorkout.sets || []).filter(set => set.id !== setToRemove!.id)
+        : activeWorkout.sets || []
     };
 
     setActiveWorkout(updatedWorkout);
@@ -166,11 +187,14 @@ const WorkoutTracker: React.FC<WorkoutTrackerProps> = ({
 
     console.log('🏁 [DEBUG] Finishing workout:', activeWorkout.id);
     
-    const totalSets = activeWorkout.exercises.reduce((sum, ex) => sum + ex.sets.length, 0);
-    const totalReps = activeWorkout.exercises.reduce((sum, ex) => 
-      sum + ex.sets.reduce((setSum, set) => setSum + (set.reps || 0), 0), 0);
-    const totalWeight = activeWorkout.exercises.reduce((sum, ex) => 
-      sum + ex.sets.reduce((setSum, set) => setSum + ((set.weight || 0) * (set.reps || 1)), 0), 0);
+    // Use helper functions for consistent data access
+    const allSets = getAllSets(activeWorkout);
+    const completedSets = getAllSets(activeWorkout, { completedOnly: true });
+    
+    const totalSets = completedSets.length;
+    const totalReps = completedSets.reduce((sum, set) => sum + (set.reps || 0), 0);
+    const totalWeight = completedSets.reduce((sum, set) => 
+      sum + ((set.weight || 0) * (set.reps || 1)), 0);
 
     const finishedWorkout = {
       ...activeWorkout,
@@ -181,8 +205,11 @@ const WorkoutTracker: React.FC<WorkoutTrackerProps> = ({
       duration: Math.floor((Date.now() - new Date(activeWorkout.date).getTime()) / 1000 / 60)
     };
 
-    console.log('💾 [DEBUG] Saving finished workout with completed=true:', finishedWorkout);
-    saveWorkout(finishedWorkout);
+    // Ensure data consistency using migration helper
+    const migratedWorkout = migrateWorkoutData(finishedWorkout);
+
+    console.log('💾 [DEBUG] Saving finished workout with completed=true:', migratedWorkout);
+    saveWorkout(migratedWorkout);
     console.log('🧹 [DEBUG] Cleaning up workout state...');
     setActiveWorkout(null);
     setSelectedExercise(null);
@@ -244,7 +271,7 @@ const WorkoutTracker: React.FC<WorkoutTrackerProps> = ({
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Recent Workouts</h3>
             <div className="space-y-3">
               {workouts.slice(0, 5).map((workout) => (
-                <div key={workout.id} className="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700 rounded-lg">
+                <div key={`recent-${workout.id}`} className="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700 rounded-lg">
                   <div>
                     <p className="font-medium text-gray-900 dark:text-white">
                       {new Date(workout.date).toLocaleDateString()}
@@ -299,12 +326,12 @@ const WorkoutTracker: React.FC<WorkoutTrackerProps> = ({
           </div>
           <div className="text-center">
             <p className="text-2xl font-bold text-green-600 dark:text-green-400">
-              {activeWorkout.exercises.reduce((sum, ex) => sum + ex.sets.length, 0)}
+              {getAllSets(activeWorkout, { completedOnly: true }).length}
             </p>
             <p className="text-sm text-gray-600 dark:text-gray-300">Sets Completed</p>
           </div>
           <div className="text-center">
-            <Timer startTime={new Date(activeWorkout.date)} />
+            <Timer autoStart={true} />
           </div>
         </div>
       </div>
@@ -338,7 +365,7 @@ const WorkoutTracker: React.FC<WorkoutTrackerProps> = ({
                 const previousData = getPreviousExerciseData(exerciseData.exercise.id);
                 return (
                   <button
-                    key={index}
+                    key={`exercise-${index}`}
                     onClick={() => setSelectedExercise(exerciseData.exercise)}
                     className="p-4 border border-gray-200 dark:border-gray-600 rounded-lg hover:border-blue-500 dark:hover:border-blue-400 transition-colors text-left"
                   >
@@ -368,7 +395,7 @@ const WorkoutTracker: React.FC<WorkoutTrackerProps> = ({
                 const previousData = getPreviousExerciseData(exercise.id);
                 return (
                   <button
-                    key={exercise.id}
+                    key={`db-${exercise.id}`}
                     onClick={() => selectExerciseFromDatabase(exercise)}
                     className="p-4 border border-gray-200 dark:border-gray-600 rounded-lg hover:border-blue-500 dark:hover:border-blue-400 transition-colors text-left"
                   >

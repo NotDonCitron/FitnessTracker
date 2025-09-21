@@ -1,21 +1,157 @@
+/**
+ * Pokemon interface with standardized sprite handling.
+ * 
+ * The `sprites` object is the primary interface for accessing Pokemon sprites.
+ * Legacy properties (`animatedSprite`, `type1`, `type2`) are maintained for 
+ * backward compatibility but should not be used in new code.
+ */
 export interface Pokemon {
   id: number;
   name: string;
-  sprite: string;
+  /** Primary sprite interface - use this for all new code */
+  sprites: {
+    static: string;
+    animated?: string;
+  };
+  /** Standardized types array - use this instead of type1/type2 */
+  types: string[];
+  
+  // Legacy properties - maintained for backward compatibility
+  
+  /**
+   * @deprecated Use `sprites.animated` instead. This property is maintained 
+   * for backward compatibility with existing saved data and will be removed 
+   * in a future version.
+   */
   animatedSprite?: string;
-  type1: string;
+  
+  /**
+   * @deprecated Use `types[0]` instead. This property is maintained for 
+   * backward compatibility with existing saved data and will be removed 
+   * in a future version.
+   */
+  type1?: string;
+  
+  /**
+   * @deprecated Use `types[1]` instead. This property is maintained for 
+   * backward compatibility with existing saved data and will be removed 
+   * in a future version.
+   */
   type2?: string;
+}
+
+export interface EvolutionRequirement {
+  trigger: string;
+  level?: number;
+  item?: string;
+  heldItem?: string;
+  timeOfDay?: string;
+  location?: string;
+  knownMove?: string;
+  knownMoveType?: string;
+  minLevel?: number;
+  gender?: string;
+  relativePhysicalStats?: number;
+  partySpecies?: string;
+  partyType?: string;
+  tradeSpecies?: string;
+  needsOverworldRain?: boolean;
+  turnUpsideDown?: boolean;
+}
+
+export interface EvolutionStage {
+  id: number;
+  name: string;
+  evolvesTo: EvolutionStage[];
+  evolutionRequirements?: EvolutionRequirement[];
+}
+
+export interface EvolutionData {
+  currentForm: Pokemon;
+  evolutionChain: EvolutionStage[];
+  nextEvolutions: Pokemon[];
+  evolutionRequirements?: EvolutionRequirement[];
+}
+
+export interface PokemonWithEvolution extends Pokemon {
+  evolutionData?: EvolutionData;
+  canEvolve: boolean;
+  evolutionProgress?: EvolutionProgress;
+}
+
+// Type for the canEvolve function
+export type CanEvolveFunction = (pokemon: PokemonWithEvolution) => Promise<boolean>;
+
+export interface EvolutionProgress {
+  currentLevel: number;
+  requiredLevel?: number;
+  workoutsCompleted: number;
+  workoutsCompletedWeighted?: number;
+  workoutTypes: string[];
+  requiredWorkouts?: number;
+  requiredTypes?: string[];
+  minWorkoutStreak?: number;
+  specialConditions?: string[];
+  lastEvolutionCheck: string;
+  activityMultiplier?: number;
 }
 
 export interface PokemonReward {
   id: string;
   pokemon: Pokemon;
-  type: 'workout' | 'milestone' | 'streak';
+  type: 'workout' | 'milestone' | 'streak' | 'evolution';
   reason: string;
   timestamp: string;
   seen: boolean;
 }
 
+export interface PokemonRewardWithEvolution extends PokemonReward {
+  pokemon: PokemonWithEvolution;
+  evolutionEligible: boolean;
+  evolutionTriggered?: boolean;
+  evolutionHistory?: EvolutionEvent[];
+}
+
+export type TriggerContext = {
+  milestoneId?: string;
+  streakDays?: number;
+  workoutId?: string;
+};
+
+export interface EvolutionEvent {
+  id: string;
+  fromPokemon: Pokemon;
+  toPokemon: Pokemon;
+  triggerType: 'workout' | 'milestone' | 'streak' | 'manual' | 'instant_workout' | 'instant_streak' | 'instant_milestone';
+  triggerReason: string;
+  timestamp: string;
+  workoutContext?: {
+    workoutType: string;
+    workoutPokemonTypes: string;
+    workoutCount: number;
+    activityLevel?: 'very_active' | 'active' | 'moderate' | 'inactive';
+    triggerContext?: TriggerContext;
+  };
+}
+
+/**
+ * Utility type for components that need to handle both new and legacy Pokemon formats.
+ * This ensures type safety during the migration period.
+ */
+export type PokemonWithLegacySupport = Pokemon & {
+  // Ensures both new and legacy properties are available
+  sprites: { static: string; animated?: string };
+  types: string[];
+  animatedSprite?: string;
+  type1?: string;
+  type2?: string;
+};
+
+/**
+ * Original 151 Pokemon data with legacy type format.
+ * This data uses the old type1/type2 format and will be migrated
+ * to the new types array format by utility functions.
+ */
 export const ORIGINAL_151_POKEMON = [
   { id: 1, name: 'bulbasaur', type1: 'grass', type2: 'poison' },
   { id: 2, name: 'ivysaur', type1: 'grass', type2: 'poison' },

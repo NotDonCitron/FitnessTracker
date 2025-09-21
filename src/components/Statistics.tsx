@@ -1,8 +1,16 @@
 import React, { useState } from 'react';
 import { BarChart3, TrendingUp, Calendar, Award, Clock, Dumbbell, User, Zap } from 'lucide-react';
 import { getExerciseById } from '../utils/exercises';
+import { getAllSets, getCompletedSets, getCompletedSetCount } from '../utils/workoutHelpers';
+import { Workout, WorkoutStats } from '../types/workout';
 
-const Statistics = ({ stats, workouts, getWorkoutsByDateRange }) => {
+interface StatisticsProps {
+  stats: WorkoutStats | null;
+  workouts: Workout[];
+  getWorkoutsByDateRange: (startDate: Date, endDate: Date) => Workout[];
+}
+
+const Statistics: React.FC<StatisticsProps> = ({ stats, workouts, getWorkoutsByDateRange }) => {
   const [timeRange, setTimeRange] = useState<'week' | 'month' | 'year'>('week');
 
   if (!stats) {
@@ -22,7 +30,7 @@ const Statistics = ({ stats, workouts, getWorkoutsByDateRange }) => {
     return `${mins}m`;
   };
 
-  const getTimeRangeData = () => {
+  const getTimeRangeData = (): Workout[] => {
     const now = new Date();
     let startDate: Date;
 
@@ -34,7 +42,7 @@ const Statistics = ({ stats, workouts, getWorkoutsByDateRange }) => {
         startDate = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000);
         break;
       case 'year':
-        startDate = new Date(now.getTime() - 365 * 24 * 60 * 60 * 1000);
+        startDate = new Date(now.getTime() - 365 * 24 * 60 * 1000);
         break;
     }
 
@@ -76,41 +84,48 @@ const Statistics = ({ stats, workouts, getWorkoutsByDateRange }) => {
 
   // Get most popular exercises
   const exerciseFrequency: Record<string, number> = {};
-  completedWorkouts.forEach(workout => {
-    workout.sets.forEach(set => {
-      exerciseFrequency[set.exerciseId] = (exerciseFrequency[set.exerciseId] || 0) + 1;
+  completedWorkouts.forEach((workout: Workout) => {
+    getAllSets(workout, { completedOnly: true }).forEach((set: any) => {
+      // Exclude 'unknown' exercise IDs from frequency count
+      if (set.exerciseId && set.exerciseId !== 'unknown') {
+        exerciseFrequency[set.exerciseId] = (exerciseFrequency[set.exerciseId] || 0) + 1;
+      }
     });
   });
 
   const topExercises = Object.entries(exerciseFrequency)
-    .sort(([,a], [,b]) => b - a)
+    .sort((a: [string, number], b: [string, number]) => b[1] - a[1])
     .slice(0, 5);
 
   // Calculate strength progress for major lifts
   const getStrengthProgress = () => {
-    const majorLifts = ['bench-press', 'squats', 'deadlifts', 'pull-ups'];
-    const progressData: Record<string, { current: number; previous: number; change: number }> = {};
-    
-    majorLifts.forEach(exerciseId => {
-      const exerciseSets = completedWorkouts
-        .flatMap(w => w.sets.filter(s => s.exerciseId === exerciseId && s.completed))
-        .sort((a, b) => new Date(completedWorkouts.find(w => w.sets.includes(a))?.date || 0).getTime() - 
-                       new Date(completedWorkouts.find(w => w.sets.includes(b))?.date || 0).getTime());
+      const majorLifts = ['bench-press', 'squats', 'deadlifts', 'pull-ups'];
+      const progressData: Record<string, { current: number; previous: number; change: number }> = {};
       
-      if (exerciseSets.length >= 2) {
-        const recent = exerciseSets.slice(-5);
-        const previous = exerciseSets.slice(-10, -5);
+      majorLifts.forEach(exerciseId => {
+        // Create workout sets with parent workout time for proper sorting
+        const workoutSets = completedWorkouts
+          .flatMap((workout: Workout) => 
+            getAllSets(workout, { completedOnly: true })
+              .filter((set: any) => set.exerciseId === exerciseId)
+              .map((set: any) => ({ ...set, _workoutTime: new Date(workout.date).getTime() }))
+          )
+          .sort((a: any, b: any) => a._workoutTime - b._workoutTime);
         
-        const currentMax = Math.max(...recent.map(s => s.weight));
-        const previousMax = previous.length > 0 ? Math.max(...previous.map(s => s.weight)) : currentMax;
-        
-        progressData[exerciseId] = {
-          current: currentMax,
-          previous: previousMax,
-          change: ((currentMax - previousMax) / previousMax) * 100
-        };
-      }
-    });
+        if (workoutSets.length >= 2) {
+          const recent = workoutSets.slice(-5);
+          const previous = workoutSets.slice(-10, -5);
+          
+          const currentMax = Math.max(...recent.map(s => s.weight));
+          const previousMax = previous.length > 0 ? Math.max(...previous.map(s => s.weight)) : currentMax;
+          
+          progressData[exerciseId] = {
+            current: currentMax,
+            previous: previousMax,
+            change: ((currentMax - previousMax) / previousMax) * 100
+          };
+        }
+      });
     
     return progressData;
   };
@@ -126,10 +141,10 @@ const Statistics = ({ stats, workouts, getWorkoutsByDateRange }) => {
       heatmapData[muscle] = 0;
     });
     
-    completedWorkouts.forEach(workout => {
-      workout.sets.forEach(set => {
+    completedWorkouts.forEach((workout: Workout) => {
+      getCompletedSets(workout).forEach((set: any) => {
         const exercise = getExerciseById(set.exerciseId);
-        if (exercise && set.completed) {
+        if (exercise) {
           exercise.muscleGroups.forEach(muscle => {
             if (heatmapData[muscle] !== undefined) {
               heatmapData[muscle] += 1;
@@ -247,13 +262,13 @@ const Statistics = ({ stats, workouts, getWorkoutsByDateRange }) => {
           Weekly Activity
         </h3>
         <div className="flex items-end justify-between h-40 bg-gray-50 rounded p-4">
-          {stats.weeklyProgress.map((count, index) => {
+          {stats.weeklyProgress.map((count: number, index: number) => {
             const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
             const maxCount = Math.max(...stats.weeklyProgress, 1);
             const height = (count / maxCount) * 100;
             
             return (
-              <div key={index} className="flex flex-col items-center">
+              <div key={`weekly-${index}`} className="flex flex-col items-center">
                 <div className="text-xs font-semibold text-gray-900 mb-1">{count}</div>
                 <div 
                   className="w-8 bg-blue-500 rounded-t transition-all duration-300 hover:bg-blue-600"
@@ -280,14 +295,14 @@ const Statistics = ({ stats, workouts, getWorkoutsByDateRange }) => {
           
           <div className="text-center p-4 bg-gray-50 rounded-lg">
             <div className="text-2xl font-bold text-green-600">
-              {formatDuration(timeRangeWorkouts.reduce((sum, w) => sum + w.duration, 0))}
+              {formatDuration(timeRangeWorkouts.reduce((sum: number, w: Workout) => sum + w.duration, 0))}
             </div>
             <div className="text-sm text-gray-600">Time Exercised</div>
           </div>
           
           <div className="text-center p-4 bg-gray-50 rounded-lg">
             <div className="text-2xl font-bold text-purple-600">
-              {timeRangeWorkouts.reduce((sum, w) => sum + w.sets.filter(s => s.completed).length, 0)}
+              {timeRangeWorkouts.reduce((sum: number, w: Workout) => sum + getCompletedSetCount(w), 0)}
             </div>
             <div className="text-sm text-gray-600">Sets Completed</div>
           </div>
@@ -304,7 +319,7 @@ const Statistics = ({ stats, workouts, getWorkoutsByDateRange }) => {
           
           <div className="space-y-3">
             {topExercises.map(([exerciseId, count], index) => (
-              <div key={exerciseId} className="flex items-center">
+              <div key={`top-${exerciseId}`} className="flex items-center">
                 <div className="flex items-center justify-center w-8 h-8 bg-blue-100 text-blue-600 rounded-full mr-3 font-semibold">
                   {index + 1}
                 </div>
@@ -341,7 +356,7 @@ const Statistics = ({ stats, workouts, getWorkoutsByDateRange }) => {
               if (!exercise) return null;
               
               return (
-                <div key={exerciseId} className="p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
+                <div key={`strength-${exerciseId}`} className="p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
                   <div className="flex justify-between items-center mb-2">
                     <h4 className="font-medium text-gray-900 dark:text-white">{exercise.name}</h4>
                     <span className={`text-sm font-bold ${
@@ -377,7 +392,7 @@ const Statistics = ({ stats, workouts, getWorkoutsByDateRange }) => {
         </h3>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {muscleHeatmap.map(({ muscle, count, intensity }) => (
-            <div key={muscle} className="text-center">
+            <div key={`muscle-${muscle}`} className="text-center">
               <div 
                 className="w-16 h-16 mx-auto rounded-full flex items-center justify-center text-white font-bold text-sm mb-2"
                 style={{ 

@@ -1,0 +1,3306 @@
+vLayout-Darstellung wurde erzwungen, bevor die Seite vollständig geladen war. Falls Stylesheet noch nicht geladen sind, kann dies zu einem kurzzeitigen Darstellung des Inhalts ohne Formatierung führen. index.js:1113:1
+[vite] connecting... client:495:9
+[vite] connected. client:618:15
+Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools chunk-373CG7ZK.js:21549:25
+🎮 [DEBUG] App: currentReward state changed: null App.tsx:67:13
+😴 [DEBUG] No current reward, modal should be hidden App.tsx:71:15
+🎮 [DEBUG] App: currentReward state changed: null App.tsx:67:13
+😴 [DEBUG] No current reward, modal should be hidden App.tsx:71:15
+Folgende nicht unterstützte entryTypes werden ignoriert: longtask. content.js:1:725316
+[DEBUG] Loading evolution data for shuppet (ID: 353) useEvolutionEngine.ts:266:15
+Folgende nicht unterstützte entryTypes werden ignoriert: longtask. content.js:1:725316
+[DEBUG] Evolution chain for shuppet: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: shuppet (ID: 353) against Pokemon ID: 353 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon shuppet (ID: 353) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: banette (ID: 354) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for shuppet: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for banette: 
+Array [ "ghost" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for lumineon (ID: 457) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for lumineon: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: finneon (ID: 456) against Pokemon ID: 457 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: lumineon (ID: 457) against Pokemon ID: 457 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon lumineon (ID: 457) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for lumineon: 
+Array []
+useEvolutionEngine.ts:297:15
+Folgende nicht unterstützte entryTypes werden ignoriert: longtask. content.js:1:725316
+[Evolution] Using API-based type requirements for lumineon: 
+Array [ "water" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for ribombee (ID: 743) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for ribombee: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: cutiefly (ID: 742) against Pokemon ID: 743 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: ribombee (ID: 743) against Pokemon ID: 743 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon ribombee (ID: 743) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for ribombee: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for ribombee: 
+Array [ "bug", "fairy" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for scovillain (ID: 952) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for scovillain: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: capsakid (ID: 951) against Pokemon ID: 952 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: scovillain (ID: 952) against Pokemon ID: 952 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon scovillain (ID: 952) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for scovillain: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for scovillain: 
+Array [ "grass", "fire" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for ursaluna (ID: 901) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for ursaluna: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: teddiursa (ID: 216) against Pokemon ID: 901 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: ursaring (ID: 217) against Pokemon ID: 901 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: ursaluna (ID: 901) against Pokemon ID: 901 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon ursaluna (ID: 901) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for ursaluna: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for ursaring: 
+Array [ "normal" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for reuniclus (ID: 579) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for reuniclus: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: solosis (ID: 577) against Pokemon ID: 579 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: duosion (ID: 578) against Pokemon ID: 579 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: reuniclus (ID: 579) against Pokemon ID: 579 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon reuniclus (ID: 579) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for reuniclus: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for duosion: 
+Array [ "psychic" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for raticate (ID: 20) useEvolutionEngine.ts:266:15
+Folgende nicht unterstützte entryTypes werden ignoriert: longtask. content.js:1:725316
+[DEBUG] Evolution chain for raticate: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: rattata (ID: 19) against Pokemon ID: 20 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: raticate (ID: 20) against Pokemon ID: 20 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon raticate (ID: 20) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for raticate: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for raticate: 
+Array [ "normal" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for beedrill (ID: 15) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for beedrill: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: weedle (ID: 13) against Pokemon ID: 15 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: kakuna (ID: 14) against Pokemon ID: 15 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: beedrill (ID: 15) against Pokemon ID: 15 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon beedrill (ID: 15) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for beedrill: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for kakuna: 
+Array [ "bug", "poison" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for arbok (ID: 24) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for arbok: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: ekans (ID: 23) against Pokemon ID: 24 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: arbok (ID: 24) against Pokemon ID: 24 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon arbok (ID: 24) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for arbok: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for arbok: 
+Array [ "poison" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for mothim (ID: 414) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for mothim: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: burmy (ID: 412) against Pokemon ID: 414 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: wormadam (ID: 413) against Pokemon ID: 414 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: mothim (ID: 414) against Pokemon ID: 414 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon mothim (ID: 414) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for mothim: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for wormadam: 
+Array [ "bug", "grass" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for silcoon (ID: 266) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for silcoon: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: wurmple (ID: 265) against Pokemon ID: 266 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: silcoon (ID: 266) against Pokemon ID: 266 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon silcoon (ID: 266) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: beautifly (ID: 267) useEvolutionEngine.ts:277:23
+[DEBUG] Checking stage: cascoon (ID: 268) against Pokemon ID: 266 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: dustox (ID: 269) against Pokemon ID: 266 useEvolutionEngine.ts:271:17
+[DEBUG] Final nextEvolutions for silcoon: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for silcoon: 
+Array [ "bug" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for ditto (ID: 132) useEvolutionEngine.ts:266:15
+Folgende nicht unterstützte entryTypes werden ignoriert: longtask. content.js:1:725316
+Using fallback evolution data for Pokemon 132 evolutionDataSources.ts:4321:15
+[DEBUG] Evolution chain for ditto: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: ditto (ID: 132) against Pokemon ID: 132 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon ditto (ID: 132) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for ditto: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for manaphy (ID: 490) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for manaphy: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: phione (ID: 489) against Pokemon ID: 490 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: manaphy (ID: 490) against Pokemon ID: 490 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon manaphy (ID: 490) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for manaphy: 
+Array []
+useEvolutionEngine.ts:297:15
+[vite] connecting... client:495:9
+[vite] connected. client:618:15
+Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools chunk-373CG7ZK.js:21549:25
+🎮 [DEBUG] App: currentReward state changed: null App.tsx:67:13
+😴 [DEBUG] No current reward, modal should be hidden App.tsx:71:15
+🎮 [DEBUG] App: currentReward state changed: null App.tsx:67:13
+😴 [DEBUG] No current reward, modal should be hidden App.tsx:71:15
+Folgende nicht unterstützte entryTypes werden ignoriert: longtask. content.js:1:725316
+Folgende nicht unterstützte entryTypes werden ignoriert: longtask. content.js:1:725316
+[DEBUG] Loading evolution data for shuppet (ID: 353) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for shuppet: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: shuppet (ID: 353) against Pokemon ID: 353 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon shuppet (ID: 353) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: banette (ID: 354) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for shuppet: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for banette: 
+Array [ "ghost" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for lumineon (ID: 457) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for lumineon: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: finneon (ID: 456) against Pokemon ID: 457 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: lumineon (ID: 457) against Pokemon ID: 457 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon lumineon (ID: 457) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for lumineon: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for lumineon: 
+Array [ "water" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for ribombee (ID: 743) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for ribombee: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: cutiefly (ID: 742) against Pokemon ID: 743 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: ribombee (ID: 743) against Pokemon ID: 743 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon ribombee (ID: 743) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for ribombee: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for ribombee: 
+Array [ "bug", "fairy" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for scovillain (ID: 952) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for scovillain: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: capsakid (ID: 951) against Pokemon ID: 952 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: scovillain (ID: 952) against Pokemon ID: 952 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon scovillain (ID: 952) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for scovillain: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for scovillain: 
+Array [ "grass", "fire" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for ursaluna (ID: 901) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for ursaluna: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: teddiursa (ID: 216) against Pokemon ID: 901 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: ursaring (ID: 217) against Pokemon ID: 901 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: ursaluna (ID: 901) against Pokemon ID: 901 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon ursaluna (ID: 901) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for ursaluna: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for ursaring: 
+Array [ "normal" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for reuniclus (ID: 579) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for reuniclus: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: solosis (ID: 577) against Pokemon ID: 579 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: duosion (ID: 578) against Pokemon ID: 579 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: reuniclus (ID: 579) against Pokemon ID: 579 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon reuniclus (ID: 579) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for reuniclus: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for duosion: 
+Array [ "psychic" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for raticate (ID: 20) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for raticate: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: rattata (ID: 19) against Pokemon ID: 20 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: raticate (ID: 20) against Pokemon ID: 20 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon raticate (ID: 20) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for raticate: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for raticate: 
+Array [ "normal" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for beedrill (ID: 15) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for beedrill: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: weedle (ID: 13) against Pokemon ID: 15 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: kakuna (ID: 14) against Pokemon ID: 15 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: beedrill (ID: 15) against Pokemon ID: 15 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon beedrill (ID: 15) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for beedrill: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for kakuna: 
+Array [ "bug", "poison" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for arbok (ID: 24) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for arbok: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: ekans (ID: 23) against Pokemon ID: 24 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: arbok (ID: 24) against Pokemon ID: 24 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon arbok (ID: 24) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for arbok: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for arbok: 
+Array [ "poison" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for mothim (ID: 414) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for mothim: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: burmy (ID: 412) against Pokemon ID: 414 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: wormadam (ID: 413) against Pokemon ID: 414 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: mothim (ID: 414) against Pokemon ID: 414 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon mothim (ID: 414) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for mothim: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for wormadam: 
+Array [ "bug", "grass" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for silcoon (ID: 266) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for silcoon: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: wurmple (ID: 265) against Pokemon ID: 266 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: silcoon (ID: 266) against Pokemon ID: 266 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon silcoon (ID: 266) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: beautifly (ID: 267) useEvolutionEngine.ts:277:23
+[DEBUG] Checking stage: cascoon (ID: 268) against Pokemon ID: 266 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: dustox (ID: 269) against Pokemon ID: 266 useEvolutionEngine.ts:271:17
+[DEBUG] Final nextEvolutions for silcoon: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for silcoon: 
+Array [ "bug" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for ditto (ID: 132) useEvolutionEngine.ts:266:15
+Using fallback evolution data for Pokemon 132 evolutionDataSources.ts:4321:15
+[DEBUG] Evolution chain for ditto: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: ditto (ID: 132) against Pokemon ID: 132 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon ditto (ID: 132) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for ditto: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for manaphy (ID: 490) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for manaphy: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: phione (ID: 489) against Pokemon ID: 490 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: manaphy (ID: 490) against Pokemon ID: 490 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon manaphy (ID: 490) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for manaphy: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for manaphy: 
+Array [ "water" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for mawile (ID: 303) useEvolutionEngine.ts:266:15
+Using fallback evolution data for Pokemon 303 evolutionDataSources.ts:4321:15
+[DEBUG] Evolution chain for mawile: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: mawile (ID: 303) against Pokemon ID: 303 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon mawile (ID: 303) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for mawile: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for shelmet (ID: 616) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for shelmet: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: shelmet (ID: 616) against Pokemon ID: 616 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon shelmet (ID: 616) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: accelgor (ID: 617) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for shelmet: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for accelgor: 
+Array [ "bug" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for noctowl (ID: 164) useEvolutionEngine.ts:266:15
+Folgende nicht unterstützte entryTypes werden ignoriert: longtask. content.js:1:725316
+[DEBUG] Evolution chain for noctowl: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: hoothoot (ID: 163) against Pokemon ID: 164 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: noctowl (ID: 164) against Pokemon ID: 164 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon noctowl (ID: 164) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for noctowl: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for noctowl: 
+Array [ "normal", "flying" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for camerupt (ID: 323) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for camerupt: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: numel (ID: 322) against Pokemon ID: 323 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: camerupt (ID: 323) against Pokemon ID: 323 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon camerupt (ID: 323) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for camerupt: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for camerupt: 
+Array [ "fire", "ground" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for toxapex (ID: 748) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for toxapex: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: mareanie (ID: 747) against Pokemon ID: 748 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: toxapex (ID: 748) against Pokemon ID: 748 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon toxapex (ID: 748) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for toxapex: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for toxapex: 
+Array [ "poison", "water" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for blaziken (ID: 257) useEvolutionEngine.ts:266:15
+Folgende nicht unterstützte entryTypes werden ignoriert: longtask. content.js:1:725316
+[DEBUG] Evolution chain for blaziken: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: torchic (ID: 255) against Pokemon ID: 257 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: combusken (ID: 256) against Pokemon ID: 257 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: blaziken (ID: 257) against Pokemon ID: 257 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon blaziken (ID: 257) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for blaziken: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for combusken: 
+Array [ "fire", "fighting" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for huntail (ID: 367) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for huntail: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: clamperl (ID: 366) against Pokemon ID: 367 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: huntail (ID: 367) against Pokemon ID: 367 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon huntail (ID: 367) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Checking stage: gorebyss (ID: 368) against Pokemon ID: 367 useEvolutionEngine.ts:271:17
+[DEBUG] Final nextEvolutions for huntail: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for huntail: 
+Array [ "water" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for shelgon (ID: 372) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for shelgon: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: bagon (ID: 371) against Pokemon ID: 372 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: shelgon (ID: 372) against Pokemon ID: 372 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon shelgon (ID: 372) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: salamence (ID: 373) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for shelgon: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for shelgon: 
+Array [ "dragon" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for articuno (ID: 144) useEvolutionEngine.ts:266:15
+Using fallback evolution data for Pokemon 144 evolutionDataSources.ts:4321:15
+[DEBUG] Evolution chain for articuno: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: articuno (ID: 144) against Pokemon ID: 144 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon articuno (ID: 144) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for articuno: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for primeape (ID: 57) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for primeape: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: mankey (ID: 56) against Pokemon ID: 57 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: primeape (ID: 57) against Pokemon ID: 57 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon primeape (ID: 57) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: annihilape (ID: 979) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for primeape: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for primeape: 
+Array [ "fighting" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for onix (ID: 95) useEvolutionEngine.ts:266:15
+Folgende nicht unterstützte entryTypes werden ignoriert: longtask. content.js:1:725316
+[DEBUG] Evolution chain for onix: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: onix (ID: 95) against Pokemon ID: 95 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon onix (ID: 95) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: steelix (ID: 208) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for onix: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for steelix: 
+Array [ "steel", "ground" ]
+useEvolutionEngine.ts:43:15
+Folgende nicht unterstützte entryTypes werden ignoriert: longtask. content.js:1:725316
+🎯 [TEST] Starting evolution for: shuppet 
+Object { canEvolve: false, hasNextEvolutions: 1, nextEvolution: "banette" }
+TestEvolutionButton.tsx:60:13
+[Evolution] Using API-based type requirements for banette: 
+Array [ "ghost" ]
+useEvolutionEngine.ts:43:15
+🔄 [TEST] Normal evolution failed, trying test mode evolution... TestEvolutionButton.tsx:69:17
+🎬 [TEST] Triggering evolution modal: 
+Object { from: "shuppet", to: "banette", reason: "Test mode evolution (forced)", callbackExists: true }
+TestEvolutionButton.tsx:144:21
+📞 [TEST] Calling onEvolutionTriggered callback... TestEvolutionButton.tsx:151:23
+🔄 [DEBUG] Evolution triggered: shuppet -> banette Test mode evolution (forced) App.tsx:136:19
+✅ [TEST] Callback executed successfully TestEvolutionButton.tsx:153:23
+✅ [TEST] Evolution successful: shuppet -> banette TestEvolutionButton.tsx:169:17
+Failed to load static sprite for banette: 
+error { target: img, isTrusted: true, srcElement: img, currentTarget: img, eventPhase: 2, bubbles: false, cancelable: false, returnValue: true, defaultPrevented: false, composed: false, … }
+AnimatedPokemon.tsx:67:17
+Failed to load static sprite for banette: 
+error { target: img, isTrusted: true, srcElement: img, currentTarget: img, eventPhase: 2, bubbles: false, cancelable: false, returnValue: true, defaultPrevented: false, composed: false, … }
+AnimatedPokemon.tsx:67:17
+Folgende nicht unterstützte entryTypes werden ignoriert: longtask. 3 content.js:1:725316
+Folgende nicht unterstützte entryTypes werden ignoriert: longtask. content.js:1:725316
+[DEBUG] Loading evolution data for shuppet (ID: 353) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for shuppet: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: shuppet (ID: 353) against Pokemon ID: 353 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon shuppet (ID: 353) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: banette (ID: 354) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for shuppet: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for banette: 
+Array [ "ghost" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for lumineon (ID: 457) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for lumineon: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: finneon (ID: 456) against Pokemon ID: 457 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: lumineon (ID: 457) against Pokemon ID: 457 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon lumineon (ID: 457) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for lumineon: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for lumineon: 
+Array [ "water" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for ribombee (ID: 743) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for ribombee: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: cutiefly (ID: 742) against Pokemon ID: 743 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: ribombee (ID: 743) against Pokemon ID: 743 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon ribombee (ID: 743) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for ribombee: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for ribombee: 
+Array [ "bug", "fairy" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for scovillain (ID: 952) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for scovillain: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: capsakid (ID: 951) against Pokemon ID: 952 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: scovillain (ID: 952) against Pokemon ID: 952 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon scovillain (ID: 952) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for scovillain: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for scovillain: 
+Array [ "grass", "fire" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for ursaluna (ID: 901) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for ursaluna: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: teddiursa (ID: 216) against Pokemon ID: 901 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: ursaring (ID: 217) against Pokemon ID: 901 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: ursaluna (ID: 901) against Pokemon ID: 901 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon ursaluna (ID: 901) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for ursaluna: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for ursaring: 
+Array [ "normal" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for reuniclus (ID: 579) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for reuniclus: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: solosis (ID: 577) against Pokemon ID: 579 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: duosion (ID: 578) against Pokemon ID: 579 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: reuniclus (ID: 579) against Pokemon ID: 579 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon reuniclus (ID: 579) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for reuniclus: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for duosion: 
+Array [ "psychic" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for raticate (ID: 20) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for raticate: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: rattata (ID: 19) against Pokemon ID: 20 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: raticate (ID: 20) against Pokemon ID: 20 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon raticate (ID: 20) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for raticate: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for raticate: 
+Array [ "normal" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for beedrill (ID: 15) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for beedrill: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: weedle (ID: 13) against Pokemon ID: 15 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: kakuna (ID: 14) against Pokemon ID: 15 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: beedrill (ID: 15) against Pokemon ID: 15 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon beedrill (ID: 15) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for beedrill: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for kakuna: 
+Array [ "bug", "poison" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for arbok (ID: 24) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for arbok: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: ekans (ID: 23) against Pokemon ID: 24 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: arbok (ID: 24) against Pokemon ID: 24 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon arbok (ID: 24) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for arbok: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for arbok: 
+Array [ "poison" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for mothim (ID: 414) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for mothim: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: burmy (ID: 412) against Pokemon ID: 414 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: wormadam (ID: 413) against Pokemon ID: 414 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: mothim (ID: 414) against Pokemon ID: 414 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon mothim (ID: 414) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for mothim: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for wormadam: 
+Array [ "bug", "grass" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for silcoon (ID: 266) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for silcoon: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: wurmple (ID: 265) against Pokemon ID: 266 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: silcoon (ID: 266) against Pokemon ID: 266 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon silcoon (ID: 266) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: beautifly (ID: 267) useEvolutionEngine.ts:277:23
+[DEBUG] Checking stage: cascoon (ID: 268) against Pokemon ID: 266 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: dustox (ID: 269) against Pokemon ID: 266 useEvolutionEngine.ts:271:17
+[DEBUG] Final nextEvolutions for silcoon: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for silcoon: 
+Array [ "bug" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for ditto (ID: 132) useEvolutionEngine.ts:266:15
+Using fallback evolution data for Pokemon 132 evolutionDataSources.ts:4321:15
+[DEBUG] Evolution chain for ditto: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: ditto (ID: 132) against Pokemon ID: 132 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon ditto (ID: 132) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for ditto: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for manaphy (ID: 490) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for manaphy: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: phione (ID: 489) against Pokemon ID: 490 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: manaphy (ID: 490) against Pokemon ID: 490 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon manaphy (ID: 490) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for manaphy: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for manaphy: 
+Array [ "water" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for mawile (ID: 303) useEvolutionEngine.ts:266:15
+Using fallback evolution data for Pokemon 303 evolutionDataSources.ts:4321:15
+[DEBUG] Evolution chain for mawile: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: mawile (ID: 303) against Pokemon ID: 303 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon mawile (ID: 303) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for mawile: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for shelmet (ID: 616) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for shelmet: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: shelmet (ID: 616) against Pokemon ID: 616 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon shelmet (ID: 616) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: accelgor (ID: 617) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for shelmet: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for accelgor: 
+Array [ "bug" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for noctowl (ID: 164) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for noctowl: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: hoothoot (ID: 163) against Pokemon ID: 164 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: noctowl (ID: 164) against Pokemon ID: 164 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon noctowl (ID: 164) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for noctowl: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for noctowl: 
+Array [ "normal", "flying" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for camerupt (ID: 323) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for camerupt: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: numel (ID: 322) against Pokemon ID: 323 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: camerupt (ID: 323) against Pokemon ID: 323 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon camerupt (ID: 323) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for camerupt: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for camerupt: 
+Array [ "fire", "ground" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for toxapex (ID: 748) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for toxapex: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: mareanie (ID: 747) against Pokemon ID: 748 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: toxapex (ID: 748) against Pokemon ID: 748 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon toxapex (ID: 748) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for toxapex: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for toxapex: 
+Array [ "poison", "water" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for blaziken (ID: 257) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for blaziken: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: torchic (ID: 255) against Pokemon ID: 257 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: combusken (ID: 256) against Pokemon ID: 257 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: blaziken (ID: 257) against Pokemon ID: 257 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon blaziken (ID: 257) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for blaziken: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for combusken: 
+Array [ "fire", "fighting" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for huntail (ID: 367) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for huntail: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: clamperl (ID: 366) against Pokemon ID: 367 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: huntail (ID: 367) against Pokemon ID: 367 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon huntail (ID: 367) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Checking stage: gorebyss (ID: 368) against Pokemon ID: 367 useEvolutionEngine.ts:271:17
+[DEBUG] Final nextEvolutions for huntail: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for huntail: 
+Array [ "water" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for shelgon (ID: 372) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for shelgon: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: bagon (ID: 371) against Pokemon ID: 372 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: shelgon (ID: 372) against Pokemon ID: 372 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon shelgon (ID: 372) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: salamence (ID: 373) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for shelgon: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for shelgon: 
+Array [ "dragon" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for articuno (ID: 144) useEvolutionEngine.ts:266:15
+Using fallback evolution data for Pokemon 144 evolutionDataSources.ts:4321:15
+[DEBUG] Evolution chain for articuno: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: articuno (ID: 144) against Pokemon ID: 144 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon articuno (ID: 144) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for articuno: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for primeape (ID: 57) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for primeape: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: mankey (ID: 56) against Pokemon ID: 57 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: primeape (ID: 57) against Pokemon ID: 57 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon primeape (ID: 57) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: annihilape (ID: 979) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for primeape: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for primeape: 
+Array [ "fighting" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for onix (ID: 95) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for onix: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: onix (ID: 95) against Pokemon ID: 95 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon onix (ID: 95) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: steelix (ID: 208) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for onix: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for steelix: 
+Array [ "steel", "ground" ]
+useEvolutionEngine.ts:43:15
+🎯 [TEST] Starting evolution for: lumineon 
+Object { canEvolve: false, hasNextEvolutions: 0, nextEvolution: undefined }
+TestEvolutionButton.tsx:60:13
+[Evolution] No next evolutions found for lumineon 
+Array [ {…} ]
+useEvolutionEngine.ts:183:15
+🔄 [TEST] Normal evolution failed, trying test mode evolution... TestEvolutionButton.tsx:69:17
+⚠️ [TEST] No valid next evolution found for lumineon - trying fallback strategies TestEvolutionButton.tsx:72:19
+🔄 [TEST] Strategy 2 - Found alternative evolution: lumineon TestEvolutionButton.tsx:103:25
+🚫 [TEST] Skipping self-evolution for final form Pokemon: lumineon TestEvolutionButton.tsx:158:21
+[DEBUG] Loading evolution data for shuppet (ID: 353) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for shuppet: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: shuppet (ID: 353) against Pokemon ID: 353 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon shuppet (ID: 353) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: banette (ID: 354) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for shuppet: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for lumineon (ID: 457) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for lumineon: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: finneon (ID: 456) against Pokemon ID: 457 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: lumineon (ID: 457) against Pokemon ID: 457 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon lumineon (ID: 457) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for lumineon: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for ribombee (ID: 743) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for ribombee: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: cutiefly (ID: 742) against Pokemon ID: 743 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: ribombee (ID: 743) against Pokemon ID: 743 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon ribombee (ID: 743) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for ribombee: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for scovillain (ID: 952) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for scovillain: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: capsakid (ID: 951) against Pokemon ID: 952 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: scovillain (ID: 952) against Pokemon ID: 952 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon scovillain (ID: 952) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for scovillain: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for ursaluna (ID: 901) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for ursaluna: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: teddiursa (ID: 216) against Pokemon ID: 901 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: ursaring (ID: 217) against Pokemon ID: 901 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: ursaluna (ID: 901) against Pokemon ID: 901 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon ursaluna (ID: 901) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for ursaluna: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for reuniclus (ID: 579) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for reuniclus: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: solosis (ID: 577) against Pokemon ID: 579 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: duosion (ID: 578) against Pokemon ID: 579 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: reuniclus (ID: 579) against Pokemon ID: 579 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon reuniclus (ID: 579) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for reuniclus: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for raticate (ID: 20) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for raticate: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: rattata (ID: 19) against Pokemon ID: 20 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: raticate (ID: 20) against Pokemon ID: 20 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon raticate (ID: 20) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for raticate: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for beedrill (ID: 15) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for beedrill: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: weedle (ID: 13) against Pokemon ID: 15 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: kakuna (ID: 14) against Pokemon ID: 15 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: beedrill (ID: 15) against Pokemon ID: 15 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon beedrill (ID: 15) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for beedrill: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for arbok (ID: 24) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for arbok: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: ekans (ID: 23) against Pokemon ID: 24 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: arbok (ID: 24) against Pokemon ID: 24 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon arbok (ID: 24) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for arbok: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for mothim (ID: 414) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for mothim: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: burmy (ID: 412) against Pokemon ID: 414 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: wormadam (ID: 413) against Pokemon ID: 414 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: mothim (ID: 414) against Pokemon ID: 414 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon mothim (ID: 414) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for mothim: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for silcoon (ID: 266) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for silcoon: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: wurmple (ID: 265) against Pokemon ID: 266 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: silcoon (ID: 266) against Pokemon ID: 266 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon silcoon (ID: 266) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: beautifly (ID: 267) useEvolutionEngine.ts:277:23
+[DEBUG] Checking stage: cascoon (ID: 268) against Pokemon ID: 266 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: dustox (ID: 269) against Pokemon ID: 266 useEvolutionEngine.ts:271:17
+[DEBUG] Final nextEvolutions for silcoon: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for ditto (ID: 132) useEvolutionEngine.ts:266:15
+Using fallback evolution data for Pokemon 132 evolutionDataSources.ts:4321:15
+[DEBUG] Evolution chain for ditto: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: ditto (ID: 132) against Pokemon ID: 132 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon ditto (ID: 132) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for ditto: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for manaphy (ID: 490) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for manaphy: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: phione (ID: 489) against Pokemon ID: 490 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: manaphy (ID: 490) against Pokemon ID: 490 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon manaphy (ID: 490) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for manaphy: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for mawile (ID: 303) useEvolutionEngine.ts:266:15
+Using fallback evolution data for Pokemon 303 evolutionDataSources.ts:4321:15
+[DEBUG] Evolution chain for mawile: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: mawile (ID: 303) against Pokemon ID: 303 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon mawile (ID: 303) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for mawile: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for shelmet (ID: 616) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for shelmet: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: shelmet (ID: 616) against Pokemon ID: 616 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon shelmet (ID: 616) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: accelgor (ID: 617) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for shelmet: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for noctowl (ID: 164) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for noctowl: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: hoothoot (ID: 163) against Pokemon ID: 164 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: noctowl (ID: 164) against Pokemon ID: 164 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon noctowl (ID: 164) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for noctowl: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for camerupt (ID: 323) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for camerupt: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: numel (ID: 322) against Pokemon ID: 323 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: camerupt (ID: 323) against Pokemon ID: 323 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon camerupt (ID: 323) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for camerupt: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for toxapex (ID: 748) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for toxapex: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: mareanie (ID: 747) against Pokemon ID: 748 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: toxapex (ID: 748) against Pokemon ID: 748 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon toxapex (ID: 748) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for toxapex: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for blaziken (ID: 257) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for blaziken: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: torchic (ID: 255) against Pokemon ID: 257 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: combusken (ID: 256) against Pokemon ID: 257 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: blaziken (ID: 257) against Pokemon ID: 257 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon blaziken (ID: 257) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for blaziken: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for huntail (ID: 367) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for huntail: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: clamperl (ID: 366) against Pokemon ID: 367 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: huntail (ID: 367) against Pokemon ID: 367 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon huntail (ID: 367) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Checking stage: gorebyss (ID: 368) against Pokemon ID: 367 useEvolutionEngine.ts:271:17
+[DEBUG] Final nextEvolutions for huntail: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for shelgon (ID: 372) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for shelgon: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: bagon (ID: 371) against Pokemon ID: 372 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: shelgon (ID: 372) against Pokemon ID: 372 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon shelgon (ID: 372) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: salamence (ID: 373) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for shelgon: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for articuno (ID: 144) useEvolutionEngine.ts:266:15
+Using fallback evolution data for Pokemon 144 evolutionDataSources.ts:4321:15
+[DEBUG] Evolution chain for articuno: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: articuno (ID: 144) against Pokemon ID: 144 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon articuno (ID: 144) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for articuno: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for primeape (ID: 57) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for primeape: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: mankey (ID: 56) against Pokemon ID: 57 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: primeape (ID: 57) against Pokemon ID: 57 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon primeape (ID: 57) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: annihilape (ID: 979) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for primeape: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for onix (ID: 95) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for onix: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: onix (ID: 95) against Pokemon ID: 95 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon onix (ID: 95) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: steelix (ID: 208) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for onix: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+🎯 [TEST] Starting evolution for: ribombee 
+Object { canEvolve: false, hasNextEvolutions: 0, nextEvolution: undefined }
+TestEvolutionButton.tsx:60:13
+[Evolution] No next evolutions found for ribombee 
+Array [ {…} ]
+useEvolutionEngine.ts:183:15
+🔄 [TEST] Normal evolution failed, trying test mode evolution... TestEvolutionButton.tsx:69:17
+⚠️ [TEST] No valid next evolution found for ribombee - trying fallback strategies TestEvolutionButton.tsx:72:19
+🔄 [TEST] Strategy 2 - Found alternative evolution: ribombee TestEvolutionButton.tsx:103:25
+🚫 [TEST] Skipping self-evolution for final form Pokemon: ribombee TestEvolutionButton.tsx:158:21
+Folgende nicht unterstützte entryTypes werden ignoriert: longtask. content.js:1:725316
+[DEBUG] Loading evolution data for shuppet (ID: 353) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for shuppet: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: shuppet (ID: 353) against Pokemon ID: 353 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon shuppet (ID: 353) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: banette (ID: 354) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for shuppet: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for banette: 
+Array [ "ghost" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for lumineon (ID: 457) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for lumineon: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: finneon (ID: 456) against Pokemon ID: 457 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: lumineon (ID: 457) against Pokemon ID: 457 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon lumineon (ID: 457) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for lumineon: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for lumineon: 
+Array [ "water" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for ribombee (ID: 743) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for ribombee: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: cutiefly (ID: 742) against Pokemon ID: 743 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: ribombee (ID: 743) against Pokemon ID: 743 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon ribombee (ID: 743) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for ribombee: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for ribombee: 
+Array [ "bug", "fairy" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for scovillain (ID: 952) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for scovillain: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: capsakid (ID: 951) against Pokemon ID: 952 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: scovillain (ID: 952) against Pokemon ID: 952 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon scovillain (ID: 952) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for scovillain: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for scovillain: 
+Array [ "grass", "fire" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for ursaluna (ID: 901) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for ursaluna: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: teddiursa (ID: 216) against Pokemon ID: 901 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: ursaring (ID: 217) against Pokemon ID: 901 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: ursaluna (ID: 901) against Pokemon ID: 901 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon ursaluna (ID: 901) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for ursaluna: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for ursaring: 
+Array [ "normal" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for reuniclus (ID: 579) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for reuniclus: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: solosis (ID: 577) against Pokemon ID: 579 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: duosion (ID: 578) against Pokemon ID: 579 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: reuniclus (ID: 579) against Pokemon ID: 579 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon reuniclus (ID: 579) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for reuniclus: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for duosion: 
+Array [ "psychic" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for raticate (ID: 20) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for raticate: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: rattata (ID: 19) against Pokemon ID: 20 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: raticate (ID: 20) against Pokemon ID: 20 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon raticate (ID: 20) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for raticate: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for raticate: 
+Array [ "normal" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for beedrill (ID: 15) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for beedrill: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: weedle (ID: 13) against Pokemon ID: 15 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: kakuna (ID: 14) against Pokemon ID: 15 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: beedrill (ID: 15) against Pokemon ID: 15 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon beedrill (ID: 15) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for beedrill: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for kakuna: 
+Array [ "bug", "poison" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for arbok (ID: 24) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for arbok: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: ekans (ID: 23) against Pokemon ID: 24 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: arbok (ID: 24) against Pokemon ID: 24 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon arbok (ID: 24) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for arbok: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for arbok: 
+Array [ "poison" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for mothim (ID: 414) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for mothim: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: burmy (ID: 412) against Pokemon ID: 414 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: wormadam (ID: 413) against Pokemon ID: 414 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: mothim (ID: 414) against Pokemon ID: 414 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon mothim (ID: 414) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for mothim: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for wormadam: 
+Array [ "bug", "grass" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for silcoon (ID: 266) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for silcoon: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: wurmple (ID: 265) against Pokemon ID: 266 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: silcoon (ID: 266) against Pokemon ID: 266 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon silcoon (ID: 266) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: beautifly (ID: 267) useEvolutionEngine.ts:277:23
+[DEBUG] Checking stage: cascoon (ID: 268) against Pokemon ID: 266 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: dustox (ID: 269) against Pokemon ID: 266 useEvolutionEngine.ts:271:17
+[DEBUG] Final nextEvolutions for silcoon: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for silcoon: 
+Array [ "bug" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for ditto (ID: 132) useEvolutionEngine.ts:266:15
+Using fallback evolution data for Pokemon 132 evolutionDataSources.ts:4321:15
+[DEBUG] Evolution chain for ditto: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: ditto (ID: 132) against Pokemon ID: 132 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon ditto (ID: 132) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for ditto: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for manaphy (ID: 490) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for manaphy: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: phione (ID: 489) against Pokemon ID: 490 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: manaphy (ID: 490) against Pokemon ID: 490 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon manaphy (ID: 490) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for manaphy: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for manaphy: 
+Array [ "water" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for mawile (ID: 303) useEvolutionEngine.ts:266:15
+Using fallback evolution data for Pokemon 303 evolutionDataSources.ts:4321:15
+[DEBUG] Evolution chain for mawile: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: mawile (ID: 303) against Pokemon ID: 303 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon mawile (ID: 303) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for mawile: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for shelmet (ID: 616) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for shelmet: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: shelmet (ID: 616) against Pokemon ID: 616 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon shelmet (ID: 616) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: accelgor (ID: 617) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for shelmet: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for accelgor: 
+Array [ "bug" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for noctowl (ID: 164) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for noctowl: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: hoothoot (ID: 163) against Pokemon ID: 164 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: noctowl (ID: 164) against Pokemon ID: 164 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon noctowl (ID: 164) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for noctowl: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for noctowl: 
+Array [ "normal", "flying" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for camerupt (ID: 323) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for camerupt: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: numel (ID: 322) against Pokemon ID: 323 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: camerupt (ID: 323) against Pokemon ID: 323 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon camerupt (ID: 323) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for camerupt: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for camerupt: 
+Array [ "fire", "ground" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for toxapex (ID: 748) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for toxapex: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: mareanie (ID: 747) against Pokemon ID: 748 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: toxapex (ID: 748) against Pokemon ID: 748 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon toxapex (ID: 748) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for toxapex: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for toxapex: 
+Array [ "poison", "water" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for blaziken (ID: 257) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for blaziken: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: torchic (ID: 255) against Pokemon ID: 257 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: combusken (ID: 256) against Pokemon ID: 257 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: blaziken (ID: 257) against Pokemon ID: 257 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon blaziken (ID: 257) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for blaziken: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for combusken: 
+Array [ "fire", "fighting" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for huntail (ID: 367) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for huntail: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: clamperl (ID: 366) against Pokemon ID: 367 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: huntail (ID: 367) against Pokemon ID: 367 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon huntail (ID: 367) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Checking stage: gorebyss (ID: 368) against Pokemon ID: 367 useEvolutionEngine.ts:271:17
+[DEBUG] Final nextEvolutions for huntail: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for huntail: 
+Array [ "water" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for shelgon (ID: 372) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for shelgon: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: bagon (ID: 371) against Pokemon ID: 372 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: shelgon (ID: 372) against Pokemon ID: 372 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon shelgon (ID: 372) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: salamence (ID: 373) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for shelgon: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for shelgon: 
+Array [ "dragon" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for articuno (ID: 144) useEvolutionEngine.ts:266:15
+Using fallback evolution data for Pokemon 144 evolutionDataSources.ts:4321:15
+[DEBUG] Evolution chain for articuno: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: articuno (ID: 144) against Pokemon ID: 144 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon articuno (ID: 144) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for articuno: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for primeape (ID: 57) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for primeape: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: mankey (ID: 56) against Pokemon ID: 57 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: primeape (ID: 57) against Pokemon ID: 57 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon primeape (ID: 57) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: annihilape (ID: 979) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for primeape: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for primeape: 
+Array [ "fighting" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for onix (ID: 95) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for onix: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: onix (ID: 95) against Pokemon ID: 95 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon onix (ID: 95) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: steelix (ID: 208) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for onix: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for steelix: 
+Array [ "steel", "ground" ]
+useEvolutionEngine.ts:43:15
+🎯 [TEST] Starting evolution for: scovillain 
+Object { canEvolve: false, hasNextEvolutions: 0, nextEvolution: undefined }
+TestEvolutionButton.tsx:60:13
+[Evolution] No next evolutions found for scovillain 
+Array [ {…} ]
+useEvolutionEngine.ts:183:15
+🔄 [TEST] Normal evolution failed, trying test mode evolution... TestEvolutionButton.tsx:69:17
+⚠️ [TEST] No valid next evolution found for scovillain - trying fallback strategies TestEvolutionButton.tsx:72:19
+🔄 [TEST] Strategy 2 - Found alternative evolution: scovillain TestEvolutionButton.tsx:103:25
+🚫 [TEST] Skipping self-evolution for final form Pokemon: scovillain TestEvolutionButton.tsx:158:21
+[DEBUG] Loading evolution data for shuppet (ID: 353) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for shuppet: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: shuppet (ID: 353) against Pokemon ID: 353 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon shuppet (ID: 353) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: banette (ID: 354) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for shuppet: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for lumineon (ID: 457) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for lumineon: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: finneon (ID: 456) against Pokemon ID: 457 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: lumineon (ID: 457) against Pokemon ID: 457 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon lumineon (ID: 457) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for lumineon: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for ribombee (ID: 743) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for ribombee: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: cutiefly (ID: 742) against Pokemon ID: 743 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: ribombee (ID: 743) against Pokemon ID: 743 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon ribombee (ID: 743) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for ribombee: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for scovillain (ID: 952) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for scovillain: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: capsakid (ID: 951) against Pokemon ID: 952 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: scovillain (ID: 952) against Pokemon ID: 952 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon scovillain (ID: 952) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for scovillain: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for ursaluna (ID: 901) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for ursaluna: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: teddiursa (ID: 216) against Pokemon ID: 901 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: ursaring (ID: 217) against Pokemon ID: 901 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: ursaluna (ID: 901) against Pokemon ID: 901 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon ursaluna (ID: 901) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for ursaluna: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for reuniclus (ID: 579) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for reuniclus: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: solosis (ID: 577) against Pokemon ID: 579 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: duosion (ID: 578) against Pokemon ID: 579 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: reuniclus (ID: 579) against Pokemon ID: 579 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon reuniclus (ID: 579) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for reuniclus: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for raticate (ID: 20) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for raticate: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: rattata (ID: 19) against Pokemon ID: 20 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: raticate (ID: 20) against Pokemon ID: 20 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon raticate (ID: 20) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for raticate: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for beedrill (ID: 15) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for beedrill: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: weedle (ID: 13) against Pokemon ID: 15 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: kakuna (ID: 14) against Pokemon ID: 15 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: beedrill (ID: 15) against Pokemon ID: 15 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon beedrill (ID: 15) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for beedrill: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for arbok (ID: 24) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for arbok: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: ekans (ID: 23) against Pokemon ID: 24 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: arbok (ID: 24) against Pokemon ID: 24 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon arbok (ID: 24) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for arbok: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for mothim (ID: 414) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for mothim: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: burmy (ID: 412) against Pokemon ID: 414 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: wormadam (ID: 413) against Pokemon ID: 414 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: mothim (ID: 414) against Pokemon ID: 414 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon mothim (ID: 414) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for mothim: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for silcoon (ID: 266) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for silcoon: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: wurmple (ID: 265) against Pokemon ID: 266 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: silcoon (ID: 266) against Pokemon ID: 266 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon silcoon (ID: 266) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: beautifly (ID: 267) useEvolutionEngine.ts:277:23
+[DEBUG] Checking stage: cascoon (ID: 268) against Pokemon ID: 266 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: dustox (ID: 269) against Pokemon ID: 266 useEvolutionEngine.ts:271:17
+[DEBUG] Final nextEvolutions for silcoon: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for ditto (ID: 132) useEvolutionEngine.ts:266:15
+Using fallback evolution data for Pokemon 132 evolutionDataSources.ts:4321:15
+[DEBUG] Evolution chain for ditto: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: ditto (ID: 132) against Pokemon ID: 132 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon ditto (ID: 132) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for ditto: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for manaphy (ID: 490) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for manaphy: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: phione (ID: 489) against Pokemon ID: 490 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: manaphy (ID: 490) against Pokemon ID: 490 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon manaphy (ID: 490) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for manaphy: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for mawile (ID: 303) useEvolutionEngine.ts:266:15
+Using fallback evolution data for Pokemon 303 evolutionDataSources.ts:4321:15
+[DEBUG] Evolution chain for mawile: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: mawile (ID: 303) against Pokemon ID: 303 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon mawile (ID: 303) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for mawile: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for shelmet (ID: 616) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for shelmet: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: shelmet (ID: 616) against Pokemon ID: 616 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon shelmet (ID: 616) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: accelgor (ID: 617) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for shelmet: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for noctowl (ID: 164) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for noctowl: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: hoothoot (ID: 163) against Pokemon ID: 164 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: noctowl (ID: 164) against Pokemon ID: 164 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon noctowl (ID: 164) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for noctowl: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for camerupt (ID: 323) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for camerupt: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: numel (ID: 322) against Pokemon ID: 323 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: camerupt (ID: 323) against Pokemon ID: 323 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon camerupt (ID: 323) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for camerupt: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for toxapex (ID: 748) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for toxapex: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: mareanie (ID: 747) against Pokemon ID: 748 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: toxapex (ID: 748) against Pokemon ID: 748 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon toxapex (ID: 748) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for toxapex: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for blaziken (ID: 257) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for blaziken: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: torchic (ID: 255) against Pokemon ID: 257 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: combusken (ID: 256) against Pokemon ID: 257 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: blaziken (ID: 257) against Pokemon ID: 257 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon blaziken (ID: 257) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for blaziken: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for huntail (ID: 367) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for huntail: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: clamperl (ID: 366) against Pokemon ID: 367 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: huntail (ID: 367) against Pokemon ID: 367 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon huntail (ID: 367) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Checking stage: gorebyss (ID: 368) against Pokemon ID: 367 useEvolutionEngine.ts:271:17
+[DEBUG] Final nextEvolutions for huntail: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for shelgon (ID: 372) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for shelgon: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: bagon (ID: 371) against Pokemon ID: 372 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: shelgon (ID: 372) against Pokemon ID: 372 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon shelgon (ID: 372) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: salamence (ID: 373) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for shelgon: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for articuno (ID: 144) useEvolutionEngine.ts:266:15
+Using fallback evolution data for Pokemon 144 evolutionDataSources.ts:4321:15
+[DEBUG] Evolution chain for articuno: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: articuno (ID: 144) against Pokemon ID: 144 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon articuno (ID: 144) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for articuno: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for primeape (ID: 57) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for primeape: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: mankey (ID: 56) against Pokemon ID: 57 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: primeape (ID: 57) against Pokemon ID: 57 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon primeape (ID: 57) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: annihilape (ID: 979) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for primeape: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for onix (ID: 95) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for onix: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: onix (ID: 95) against Pokemon ID: 95 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon onix (ID: 95) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: steelix (ID: 208) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for onix: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+🎯 [TEST] Starting evolution for: raticate 
+Object { canEvolve: false, hasNextEvolutions: 0, nextEvolution: undefined }
+TestEvolutionButton.tsx:60:13
+[Evolution] No next evolutions found for raticate 
+Array [ {…} ]
+useEvolutionEngine.ts:183:15
+🔄 [TEST] Normal evolution failed, trying test mode evolution... TestEvolutionButton.tsx:69:17
+⚠️ [TEST] No valid next evolution found for raticate - trying fallback strategies TestEvolutionButton.tsx:72:19
+🔄 [TEST] Strategy 2 - Found alternative evolution: raticate TestEvolutionButton.tsx:103:25
+🚫 [TEST] Skipping self-evolution for final form Pokemon: raticate TestEvolutionButton.tsx:158:21
+Folgende nicht unterstützte entryTypes werden ignoriert: longtask. content.js:1:725316
+[DEBUG] Loading evolution data for shuppet (ID: 353) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for shuppet: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: shuppet (ID: 353) against Pokemon ID: 353 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon shuppet (ID: 353) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: banette (ID: 354) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for shuppet: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for banette: 
+Array [ "ghost" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for lumineon (ID: 457) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for lumineon: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: finneon (ID: 456) against Pokemon ID: 457 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: lumineon (ID: 457) against Pokemon ID: 457 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon lumineon (ID: 457) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for lumineon: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for lumineon: 
+Array [ "water" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for ribombee (ID: 743) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for ribombee: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: cutiefly (ID: 742) against Pokemon ID: 743 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: ribombee (ID: 743) against Pokemon ID: 743 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon ribombee (ID: 743) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for ribombee: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for ribombee: 
+Array [ "bug", "fairy" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for scovillain (ID: 952) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for scovillain: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: capsakid (ID: 951) against Pokemon ID: 952 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: scovillain (ID: 952) against Pokemon ID: 952 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon scovillain (ID: 952) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for scovillain: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for scovillain: 
+Array [ "grass", "fire" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for ursaluna (ID: 901) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for ursaluna: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: teddiursa (ID: 216) against Pokemon ID: 901 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: ursaring (ID: 217) against Pokemon ID: 901 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: ursaluna (ID: 901) against Pokemon ID: 901 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon ursaluna (ID: 901) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for ursaluna: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for ursaring: 
+Array [ "normal" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for reuniclus (ID: 579) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for reuniclus: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: solosis (ID: 577) against Pokemon ID: 579 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: duosion (ID: 578) against Pokemon ID: 579 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: reuniclus (ID: 579) against Pokemon ID: 579 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon reuniclus (ID: 579) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for reuniclus: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for duosion: 
+Array [ "psychic" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for raticate (ID: 20) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for raticate: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: rattata (ID: 19) against Pokemon ID: 20 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: raticate (ID: 20) against Pokemon ID: 20 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon raticate (ID: 20) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for raticate: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for raticate: 
+Array [ "normal" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for beedrill (ID: 15) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for beedrill: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: weedle (ID: 13) against Pokemon ID: 15 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: kakuna (ID: 14) against Pokemon ID: 15 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: beedrill (ID: 15) against Pokemon ID: 15 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon beedrill (ID: 15) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for beedrill: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for kakuna: 
+Array [ "bug", "poison" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for arbok (ID: 24) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for arbok: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: ekans (ID: 23) against Pokemon ID: 24 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: arbok (ID: 24) against Pokemon ID: 24 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon arbok (ID: 24) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for arbok: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for arbok: 
+Array [ "poison" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for mothim (ID: 414) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for mothim: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: burmy (ID: 412) against Pokemon ID: 414 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: wormadam (ID: 413) against Pokemon ID: 414 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: mothim (ID: 414) against Pokemon ID: 414 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon mothim (ID: 414) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for mothim: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for wormadam: 
+Array [ "bug", "grass" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for silcoon (ID: 266) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for silcoon: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: wurmple (ID: 265) against Pokemon ID: 266 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: silcoon (ID: 266) against Pokemon ID: 266 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon silcoon (ID: 266) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: beautifly (ID: 267) useEvolutionEngine.ts:277:23
+[DEBUG] Checking stage: cascoon (ID: 268) against Pokemon ID: 266 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: dustox (ID: 269) against Pokemon ID: 266 useEvolutionEngine.ts:271:17
+[DEBUG] Final nextEvolutions for silcoon: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for silcoon: 
+Array [ "bug" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for ditto (ID: 132) useEvolutionEngine.ts:266:15
+Using fallback evolution data for Pokemon 132 evolutionDataSources.ts:4321:15
+[DEBUG] Evolution chain for ditto: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: ditto (ID: 132) against Pokemon ID: 132 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon ditto (ID: 132) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for ditto: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for manaphy (ID: 490) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for manaphy: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: phione (ID: 489) against Pokemon ID: 490 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: manaphy (ID: 490) against Pokemon ID: 490 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon manaphy (ID: 490) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for manaphy: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for manaphy: 
+Array [ "water" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for mawile (ID: 303) useEvolutionEngine.ts:266:15
+Using fallback evolution data for Pokemon 303 evolutionDataSources.ts:4321:15
+[DEBUG] Evolution chain for mawile: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: mawile (ID: 303) against Pokemon ID: 303 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon mawile (ID: 303) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for mawile: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for shelmet (ID: 616) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for shelmet: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: shelmet (ID: 616) against Pokemon ID: 616 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon shelmet (ID: 616) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: accelgor (ID: 617) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for shelmet: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for accelgor: 
+Array [ "bug" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for noctowl (ID: 164) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for noctowl: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: hoothoot (ID: 163) against Pokemon ID: 164 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: noctowl (ID: 164) against Pokemon ID: 164 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon noctowl (ID: 164) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for noctowl: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for noctowl: 
+Array [ "normal", "flying" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for camerupt (ID: 323) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for camerupt: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: numel (ID: 322) against Pokemon ID: 323 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: camerupt (ID: 323) against Pokemon ID: 323 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon camerupt (ID: 323) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for camerupt: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for camerupt: 
+Array [ "fire", "ground" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for toxapex (ID: 748) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for toxapex: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: mareanie (ID: 747) against Pokemon ID: 748 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: toxapex (ID: 748) against Pokemon ID: 748 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon toxapex (ID: 748) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for toxapex: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for toxapex: 
+Array [ "poison", "water" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for blaziken (ID: 257) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for blaziken: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: torchic (ID: 255) against Pokemon ID: 257 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: combusken (ID: 256) against Pokemon ID: 257 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: blaziken (ID: 257) against Pokemon ID: 257 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon blaziken (ID: 257) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for blaziken: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for combusken: 
+Array [ "fire", "fighting" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for huntail (ID: 367) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for huntail: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: clamperl (ID: 366) against Pokemon ID: 367 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: huntail (ID: 367) against Pokemon ID: 367 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon huntail (ID: 367) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Checking stage: gorebyss (ID: 368) against Pokemon ID: 367 useEvolutionEngine.ts:271:17
+[DEBUG] Final nextEvolutions for huntail: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for huntail: 
+Array [ "water" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for shelgon (ID: 372) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for shelgon: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: bagon (ID: 371) against Pokemon ID: 372 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: shelgon (ID: 372) against Pokemon ID: 372 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon shelgon (ID: 372) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: salamence (ID: 373) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for shelgon: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for shelgon: 
+Array [ "dragon" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for articuno (ID: 144) useEvolutionEngine.ts:266:15
+Using fallback evolution data for Pokemon 144 evolutionDataSources.ts:4321:15
+[DEBUG] Evolution chain for articuno: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: articuno (ID: 144) against Pokemon ID: 144 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon articuno (ID: 144) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for articuno: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for primeape (ID: 57) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for primeape: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: mankey (ID: 56) against Pokemon ID: 57 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: primeape (ID: 57) against Pokemon ID: 57 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon primeape (ID: 57) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: annihilape (ID: 979) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for primeape: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for primeape: 
+Array [ "fighting" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for onix (ID: 95) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for onix: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: onix (ID: 95) against Pokemon ID: 95 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon onix (ID: 95) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: steelix (ID: 208) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for onix: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for steelix: 
+Array [ "steel", "ground" ]
+useEvolutionEngine.ts:43:15
+🎯 [TEST] Starting evolution for: ditto 
+Object { canEvolve: false, hasNextEvolutions: 0, nextEvolution: undefined }
+TestEvolutionButton.tsx:60:13
+[Evolution] No next evolutions found for ditto 
+Array [ {…} ]
+useEvolutionEngine.ts:183:15
+🔄 [TEST] Normal evolution failed, trying test mode evolution... TestEvolutionButton.tsx:69:17
+⚠️ [TEST] No valid next evolution found for ditto - trying fallback strategies TestEvolutionButton.tsx:72:19
+🚫 [TEST] No evolution available for final form Pokemon: ditto TestEvolutionButton.tsx:109:21
+Folgende nicht unterstützte entryTypes werden ignoriert: longtask. 3 content.js:1:725316
+[DEBUG] Loading evolution data for shuppet (ID: 353) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for shuppet: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: shuppet (ID: 353) against Pokemon ID: 353 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon shuppet (ID: 353) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: banette (ID: 354) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for shuppet: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for banette: 
+Array [ "ghost" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for lumineon (ID: 457) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for lumineon: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: finneon (ID: 456) against Pokemon ID: 457 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: lumineon (ID: 457) against Pokemon ID: 457 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon lumineon (ID: 457) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for lumineon: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for lumineon: 
+Array [ "water" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for ribombee (ID: 743) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for ribombee: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: cutiefly (ID: 742) against Pokemon ID: 743 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: ribombee (ID: 743) against Pokemon ID: 743 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon ribombee (ID: 743) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for ribombee: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for ribombee: 
+Array [ "bug", "fairy" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for scovillain (ID: 952) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for scovillain: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: capsakid (ID: 951) against Pokemon ID: 952 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: scovillain (ID: 952) against Pokemon ID: 952 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon scovillain (ID: 952) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for scovillain: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for scovillain: 
+Array [ "grass", "fire" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for ursaluna (ID: 901) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for ursaluna: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: teddiursa (ID: 216) against Pokemon ID: 901 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: ursaring (ID: 217) against Pokemon ID: 901 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: ursaluna (ID: 901) against Pokemon ID: 901 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon ursaluna (ID: 901) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for ursaluna: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for ursaring: 
+Array [ "normal" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for reuniclus (ID: 579) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for reuniclus: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: solosis (ID: 577) against Pokemon ID: 579 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: duosion (ID: 578) against Pokemon ID: 579 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: reuniclus (ID: 579) against Pokemon ID: 579 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon reuniclus (ID: 579) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for reuniclus: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for duosion: 
+Array [ "psychic" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for raticate (ID: 20) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for raticate: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: rattata (ID: 19) against Pokemon ID: 20 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: raticate (ID: 20) against Pokemon ID: 20 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon raticate (ID: 20) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for raticate: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for raticate: 
+Array [ "normal" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for beedrill (ID: 15) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for beedrill: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: weedle (ID: 13) against Pokemon ID: 15 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: kakuna (ID: 14) against Pokemon ID: 15 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: beedrill (ID: 15) against Pokemon ID: 15 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon beedrill (ID: 15) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for beedrill: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for kakuna: 
+Array [ "bug", "poison" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for arbok (ID: 24) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for arbok: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: ekans (ID: 23) against Pokemon ID: 24 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: arbok (ID: 24) against Pokemon ID: 24 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon arbok (ID: 24) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for arbok: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for arbok: 
+Array [ "poison" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for mothim (ID: 414) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for mothim: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: burmy (ID: 412) against Pokemon ID: 414 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: wormadam (ID: 413) against Pokemon ID: 414 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: mothim (ID: 414) against Pokemon ID: 414 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon mothim (ID: 414) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for mothim: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for wormadam: 
+Array [ "bug", "grass" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for silcoon (ID: 266) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for silcoon: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: wurmple (ID: 265) against Pokemon ID: 266 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: silcoon (ID: 266) against Pokemon ID: 266 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon silcoon (ID: 266) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: beautifly (ID: 267) useEvolutionEngine.ts:277:23
+[DEBUG] Checking stage: cascoon (ID: 268) against Pokemon ID: 266 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: dustox (ID: 269) against Pokemon ID: 266 useEvolutionEngine.ts:271:17
+[DEBUG] Final nextEvolutions for silcoon: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for silcoon: 
+Array [ "bug" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for ditto (ID: 132) useEvolutionEngine.ts:266:15
+Using fallback evolution data for Pokemon 132 evolutionDataSources.ts:4321:15
+[DEBUG] Evolution chain for ditto: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: ditto (ID: 132) against Pokemon ID: 132 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon ditto (ID: 132) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for ditto: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for manaphy (ID: 490) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for manaphy: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: phione (ID: 489) against Pokemon ID: 490 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: manaphy (ID: 490) against Pokemon ID: 490 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon manaphy (ID: 490) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for manaphy: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for manaphy: 
+Array [ "water" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for mawile (ID: 303) useEvolutionEngine.ts:266:15
+Using fallback evolution data for Pokemon 303 evolutionDataSources.ts:4321:15
+[DEBUG] Evolution chain for mawile: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: mawile (ID: 303) against Pokemon ID: 303 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon mawile (ID: 303) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for mawile: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for shelmet (ID: 616) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for shelmet: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: shelmet (ID: 616) against Pokemon ID: 616 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon shelmet (ID: 616) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: accelgor (ID: 617) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for shelmet: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for accelgor: 
+Array [ "bug" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for noctowl (ID: 164) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for noctowl: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: hoothoot (ID: 163) against Pokemon ID: 164 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: noctowl (ID: 164) against Pokemon ID: 164 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon noctowl (ID: 164) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for noctowl: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for noctowl: 
+Array [ "normal", "flying" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for camerupt (ID: 323) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for camerupt: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: numel (ID: 322) against Pokemon ID: 323 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: camerupt (ID: 323) against Pokemon ID: 323 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon camerupt (ID: 323) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for camerupt: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for camerupt: 
+Array [ "fire", "ground" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for toxapex (ID: 748) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for toxapex: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: mareanie (ID: 747) against Pokemon ID: 748 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: toxapex (ID: 748) against Pokemon ID: 748 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon toxapex (ID: 748) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for toxapex: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for toxapex: 
+Array [ "poison", "water" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for blaziken (ID: 257) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for blaziken: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: torchic (ID: 255) against Pokemon ID: 257 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: combusken (ID: 256) against Pokemon ID: 257 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: blaziken (ID: 257) against Pokemon ID: 257 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon blaziken (ID: 257) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for blaziken: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for combusken: 
+Array [ "fire", "fighting" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for huntail (ID: 367) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for huntail: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: clamperl (ID: 366) against Pokemon ID: 367 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: huntail (ID: 367) against Pokemon ID: 367 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon huntail (ID: 367) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Checking stage: gorebyss (ID: 368) against Pokemon ID: 367 useEvolutionEngine.ts:271:17
+[DEBUG] Final nextEvolutions for huntail: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for huntail: 
+Array [ "water" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for shelgon (ID: 372) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for shelgon: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: bagon (ID: 371) against Pokemon ID: 372 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: shelgon (ID: 372) against Pokemon ID: 372 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon shelgon (ID: 372) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: salamence (ID: 373) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for shelgon: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for shelgon: 
+Array [ "dragon" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for articuno (ID: 144) useEvolutionEngine.ts:266:15
+Using fallback evolution data for Pokemon 144 evolutionDataSources.ts:4321:15
+[DEBUG] Evolution chain for articuno: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: articuno (ID: 144) against Pokemon ID: 144 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon articuno (ID: 144) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for articuno: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for primeape (ID: 57) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for primeape: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: mankey (ID: 56) against Pokemon ID: 57 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: primeape (ID: 57) against Pokemon ID: 57 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon primeape (ID: 57) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: annihilape (ID: 979) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for primeape: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for primeape: 
+Array [ "fighting" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for onix (ID: 95) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for onix: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: onix (ID: 95) against Pokemon ID: 95 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon onix (ID: 95) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: steelix (ID: 208) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for onix: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for steelix: 
+Array [ "steel", "ground" ]
+useEvolutionEngine.ts:43:15
+Folgende nicht unterstützte entryTypes werden ignoriert: longtask. content.js:1:725316
+🎯 [TEST] Starting evolution for: blaziken 
+Object { canEvolve: false, hasNextEvolutions: 0, nextEvolution: undefined }
+TestEvolutionButton.tsx:60:13
+[Evolution] No next evolutions found for blaziken 
+Array [ {…} ]
+useEvolutionEngine.ts:183:15
+🔄 [TEST] Normal evolution failed, trying test mode evolution... TestEvolutionButton.tsx:69:17
+⚠️ [TEST] No valid next evolution found for blaziken - trying fallback strategies TestEvolutionButton.tsx:72:19
+🔄 [TEST] Strategy 2 - Found alternative evolution: combusken TestEvolutionButton.tsx:103:25
+🎬 [TEST] Triggering evolution modal: 
+Object { from: "blaziken", to: "combusken", reason: "Test mode evolution (forced)", callbackExists: true }
+TestEvolutionButton.tsx:144:21
+📞 [TEST] Calling onEvolutionTriggered callback... TestEvolutionButton.tsx:151:23
+🔄 [DEBUG] Evolution triggered: blaziken -> combusken Test mode evolution (forced) App.tsx:136:19
+✅ [TEST] Callback executed successfully TestEvolutionButton.tsx:153:23
+✅ [TEST] Evolution successful: blaziken -> combusken TestEvolutionButton.tsx:169:17
+Folgende nicht unterstützte entryTypes werden ignoriert: longtask. content.js:1:725316
+Failed to load static sprite for combusken: 
+error { target: img, isTrusted: true, srcElement: img, currentTarget: img, eventPhase: 2, bubbles: false, cancelable: false, returnValue: true, defaultPrevented: false, composed: false, … }
+AnimatedPokemon.tsx:67:17
+Failed to load static sprite for combusken: 
+error { target: img, isTrusted: true, srcElement: img, currentTarget: img, eventPhase: 2, bubbles: false, cancelable: false, returnValue: true, defaultPrevented: false, composed: false, … }
+AnimatedPokemon.tsx:67:17
+Folgende nicht unterstützte entryTypes werden ignoriert: longtask. content.js:1:725316
+[DEBUG] Loading evolution data for shuppet (ID: 353) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for shuppet: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: shuppet (ID: 353) against Pokemon ID: 353 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon shuppet (ID: 353) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: banette (ID: 354) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for shuppet: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for banette: 
+Array [ "ghost" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for lumineon (ID: 457) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for lumineon: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: finneon (ID: 456) against Pokemon ID: 457 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: lumineon (ID: 457) against Pokemon ID: 457 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon lumineon (ID: 457) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for lumineon: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for lumineon: 
+Array [ "water" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for ribombee (ID: 743) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for ribombee: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: cutiefly (ID: 742) against Pokemon ID: 743 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: ribombee (ID: 743) against Pokemon ID: 743 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon ribombee (ID: 743) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for ribombee: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for ribombee: 
+Array [ "bug", "fairy" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for scovillain (ID: 952) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for scovillain: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: capsakid (ID: 951) against Pokemon ID: 952 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: scovillain (ID: 952) against Pokemon ID: 952 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon scovillain (ID: 952) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for scovillain: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for scovillain: 
+Array [ "grass", "fire" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for ursaluna (ID: 901) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for ursaluna: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: teddiursa (ID: 216) against Pokemon ID: 901 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: ursaring (ID: 217) against Pokemon ID: 901 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: ursaluna (ID: 901) against Pokemon ID: 901 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon ursaluna (ID: 901) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for ursaluna: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for ursaring: 
+Array [ "normal" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for reuniclus (ID: 579) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for reuniclus: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: solosis (ID: 577) against Pokemon ID: 579 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: duosion (ID: 578) against Pokemon ID: 579 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: reuniclus (ID: 579) against Pokemon ID: 579 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon reuniclus (ID: 579) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for reuniclus: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for duosion: 
+Array [ "psychic" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for raticate (ID: 20) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for raticate: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: rattata (ID: 19) against Pokemon ID: 20 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: raticate (ID: 20) against Pokemon ID: 20 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon raticate (ID: 20) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for raticate: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for raticate: 
+Array [ "normal" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for beedrill (ID: 15) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for beedrill: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: weedle (ID: 13) against Pokemon ID: 15 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: kakuna (ID: 14) against Pokemon ID: 15 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: beedrill (ID: 15) against Pokemon ID: 15 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon beedrill (ID: 15) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for beedrill: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for kakuna: 
+Array [ "bug", "poison" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for arbok (ID: 24) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for arbok: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: ekans (ID: 23) against Pokemon ID: 24 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: arbok (ID: 24) against Pokemon ID: 24 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon arbok (ID: 24) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for arbok: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for arbok: 
+Array [ "poison" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for mothim (ID: 414) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for mothim: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: burmy (ID: 412) against Pokemon ID: 414 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: wormadam (ID: 413) against Pokemon ID: 414 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: mothim (ID: 414) against Pokemon ID: 414 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon mothim (ID: 414) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for mothim: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for wormadam: 
+Array [ "bug", "grass" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for silcoon (ID: 266) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for silcoon: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: wurmple (ID: 265) against Pokemon ID: 266 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: silcoon (ID: 266) against Pokemon ID: 266 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon silcoon (ID: 266) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: beautifly (ID: 267) useEvolutionEngine.ts:277:23
+[DEBUG] Checking stage: cascoon (ID: 268) against Pokemon ID: 266 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: dustox (ID: 269) against Pokemon ID: 266 useEvolutionEngine.ts:271:17
+[DEBUG] Final nextEvolutions for silcoon: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for silcoon: 
+Array [ "bug" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for ditto (ID: 132) useEvolutionEngine.ts:266:15
+Using fallback evolution data for Pokemon 132 evolutionDataSources.ts:4321:15
+[DEBUG] Evolution chain for ditto: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: ditto (ID: 132) against Pokemon ID: 132 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon ditto (ID: 132) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for ditto: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for manaphy (ID: 490) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for manaphy: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: phione (ID: 489) against Pokemon ID: 490 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: manaphy (ID: 490) against Pokemon ID: 490 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon manaphy (ID: 490) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for manaphy: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for manaphy: 
+Array [ "water" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for mawile (ID: 303) useEvolutionEngine.ts:266:15
+Using fallback evolution data for Pokemon 303 evolutionDataSources.ts:4321:15
+[DEBUG] Evolution chain for mawile: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: mawile (ID: 303) against Pokemon ID: 303 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon mawile (ID: 303) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for mawile: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for shelmet (ID: 616) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for shelmet: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: shelmet (ID: 616) against Pokemon ID: 616 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon shelmet (ID: 616) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: accelgor (ID: 617) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for shelmet: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for accelgor: 
+Array [ "bug" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for noctowl (ID: 164) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for noctowl: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: hoothoot (ID: 163) against Pokemon ID: 164 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: noctowl (ID: 164) against Pokemon ID: 164 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon noctowl (ID: 164) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for noctowl: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for noctowl: 
+Array [ "normal", "flying" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for camerupt (ID: 323) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for camerupt: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: numel (ID: 322) against Pokemon ID: 323 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: camerupt (ID: 323) against Pokemon ID: 323 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon camerupt (ID: 323) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for camerupt: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for camerupt: 
+Array [ "fire", "ground" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for toxapex (ID: 748) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for toxapex: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: mareanie (ID: 747) against Pokemon ID: 748 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: toxapex (ID: 748) against Pokemon ID: 748 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon toxapex (ID: 748) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for toxapex: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for toxapex: 
+Array [ "poison", "water" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for blaziken (ID: 257) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for blaziken: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: torchic (ID: 255) against Pokemon ID: 257 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: combusken (ID: 256) against Pokemon ID: 257 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: blaziken (ID: 257) against Pokemon ID: 257 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon blaziken (ID: 257) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for blaziken: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for combusken: 
+Array [ "fire", "fighting" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for huntail (ID: 367) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for huntail: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: clamperl (ID: 366) against Pokemon ID: 367 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: huntail (ID: 367) against Pokemon ID: 367 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon huntail (ID: 367) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Checking stage: gorebyss (ID: 368) against Pokemon ID: 367 useEvolutionEngine.ts:271:17
+[DEBUG] Final nextEvolutions for huntail: 
+Array []
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for huntail: 
+Array [ "water" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for shelgon (ID: 372) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for shelgon: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: bagon (ID: 371) against Pokemon ID: 372 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: shelgon (ID: 372) against Pokemon ID: 372 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon shelgon (ID: 372) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: salamence (ID: 373) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for shelgon: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for shelgon: 
+Array [ "dragon" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for articuno (ID: 144) useEvolutionEngine.ts:266:15
+Using fallback evolution data for Pokemon 144 evolutionDataSources.ts:4321:15
+[DEBUG] Evolution chain for articuno: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: articuno (ID: 144) against Pokemon ID: 144 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon articuno (ID: 144) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array []
+useEvolutionEngine.ts:274:19
+[DEBUG] Final nextEvolutions for articuno: 
+Array []
+useEvolutionEngine.ts:297:15
+[DEBUG] Loading evolution data for primeape (ID: 57) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for primeape: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: mankey (ID: 56) against Pokemon ID: 57 useEvolutionEngine.ts:271:17
+[DEBUG] Checking stage: primeape (ID: 57) against Pokemon ID: 57 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon primeape (ID: 57) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: annihilape (ID: 979) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for primeape: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for primeape: 
+Array [ "fighting" ]
+useEvolutionEngine.ts:43:15
+[DEBUG] Loading evolution data for onix (ID: 95) useEvolutionEngine.ts:266:15
+[DEBUG] Evolution chain for onix: 
+Array [ {…} ]
+useEvolutionEngine.ts:268:15
+[DEBUG] Checking stage: onix (ID: 95) against Pokemon ID: 95 useEvolutionEngine.ts:271:17
+[DEBUG] Found current Pokemon onix (ID: 95) in evolution chain useEvolutionEngine.ts:273:19
+[DEBUG] Current stage evolvesTo: 
+Array [ {…} ]
+useEvolutionEngine.ts:274:19
+[DEBUG] Adding next evolution: steelix (ID: 208) useEvolutionEngine.ts:277:23
+[DEBUG] Final nextEvolutions for onix: 
+Array [ {…} ]
+useEvolutionEngine.ts:297:15
+[Evolution] Using API-based type requirements for steelix: 
+Array [ "steel", "ground" ]
+useEvolutionEngine.ts:43:15
+🎯 [TEST] Starting evolution for: ditto 
+Object { canEvolve: false, hasNextEvolutions: 0, nextEvolution: undefined }
+TestEvolutionButton.tsx:60:13
+[Evolution] No next evolutions found for ditto 
+Array [ {…} ]
+useEvolutionEngine.ts:183:15
+🔄 [TEST] Normal evolution failed, trying test mode evolution... TestEvolutionButton.tsx:69:17
+⚠️ [TEST] No valid next evolution found for ditto - trying fallback strategies TestEvolutionButton.tsx:72:19
+🚫 [TEST] No evolution available for final form Pokemon: ditto TestEvolutionButton.tsx:109:21
+Folgende nicht unterstützte entryTypes werden ignoriert: longtask. 5 content.js:1:725316

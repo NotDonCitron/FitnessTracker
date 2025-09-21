@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolution Context Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .test-result {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        pre {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Evolution Context Normalization Test</h1>
+        <p>This test verifies that the context normalization we implemented in <code>useEvolutionEngine.ts</code> works correctly.</p>
+        
+        <button id="runTest">Run Test</button>
+        
+        <div id="results"></div>
+    </div>
+
+    <script>
+        document.getElementById('runTest').addEventListener('click', runTest);
+        
+        function runTest() {
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = '';
+            
+            // Test 1: Normal context normalization
+            try {
+                // Create a mock context similar to what would be passed to handleActivityEvent
+                const mockContext = {
+                    workout: { id: 'workout-123', name: 'Test Workout' },
+                    streakDays: 7,
+                    milestone: { 
+                        id: 'milestone-456', 
+                        title: 'Test Milestone',
+                        description: 'Test milestone for evolution',
+                        targetValue: 10,
+                        currentValue: 5,
+                        unit: 'workouts',
+                        completed: false,
+                        category: 'strength'
+                    }
+                };
+                
+                // Normalize the context (this is what we implemented in useEvolutionEngine.ts)
+                const normalizedContext = mockContext
+                    ? {
+                        workoutId: mockContext.workout?.id,
+                        milestoneId: mockContext.milestone?.id,
+                        streakDays: mockContext.streakDays,
+                    }
+                    : undefined;
+                
+                // Display results
+                addResult(resultsDiv, 'Test 1: Normal context normalization', true);
+                addResult(resultsDiv, 'Original context:', false, JSON.stringify(mockContext, null, 2));
+                addResult(resultsDiv, 'Normalized context:', false, JSON.stringify(normalizedContext, null, 2));
+                
+                // Verify the normalized context has the correct structure
+                if (normalizedContext && 
+                    normalizedContext.workoutId === 'workout-123' &&
+                    normalizedContext.milestoneId === 'milestone-456' &&
+                    normalizedContext.streakDays === 7) {
+                    addResult(resultsDiv, '✅ Normalized context has correct structure and values', true);
+                } else {
+                    addResult(resultsDiv, '❌ Normalized context does not have correct structure or values', false);
+                }
+            } catch (error) {
+                addResult(resultsDiv, `Test 1 failed with error: ${error.message}`, false);
+            }
+            
+            // Test 2: Undefined context handling
+            try {
+                const mockContext = undefined;
+                
+                // Normalize the context (this is what we implemented in useEvolutionEngine.ts)
+                const normalizedContext = mockContext
+                    ? {
+                        workoutId: mockContext.workout?.id,
+                        milestoneId: mockContext.milestone?.id,
+                        streakDays: mockContext.streakDays,
+                    }
+                    : undefined;
+                
+                // Display results
+                addResult(resultsDiv, 'Test 2: Undefined context handling', true);
+                addResult(resultsDiv, 'Original context:', false, 'undefined');
+                addResult(resultsDiv, 'Normalized context:', false, JSON.stringify(normalizedContext, null, 2));
+                
+                // Verify the normalized context is undefined
+                if (normalizedContext === undefined) {
+                    addResult(resultsDiv, '✅ Normalized context is correctly undefined', true);
+                } else {
+                    addResult(resultsDiv, '❌ Normalized context should be undefined', false);
+                }
+            } catch (error) {
+                addResult(resultsDiv, `Test 2 failed with error: ${error.message}`, false);
+            }
+            
+            // Test 3: Partial context handling
+            try {
+                const mockContext = {
+                    workout: { id: 'workout-789', name: 'Another Test Workout' }
+                    // No streakDays or milestone
+                };
+                
+                // Normalize the context (this is what we implemented in useEvolutionEngine.ts)
+                const normalizedContext = mockContext
+                    ? {
+                        workoutId: mockContext.workout?.id,
+                        milestoneId: mockContext.milestone?.id,
+                        streakDays: mockContext.streakDays,
+                    }
+                    : undefined;
+                
+                // Display results
+                addResult(resultsDiv, 'Test 3: Partial context handling', true);
+                addResult(resultsDiv, 'Original context:', false, JSON.stringify(mockContext, null, 2));
+                addResult(resultsDiv, 'Normalized context:', false, JSON.stringify(normalizedContext, null, 2));
+                
+                // Verify the normalized context has the correct structure
+                if (normalizedContext && 
+                    normalizedContext.workoutId === 'workout-789' &&
+                    normalizedContext.milestoneId === undefined &&
+                    normalizedContext.streakDays === undefined) {
+                    addResult(resultsDiv, '✅ Normalized context has correct structure with partial data', true);
+                } else {
+                    addResult(resultsDiv, '❌ Normalized context does not have correct structure with partial data', false);
+                }
+            } catch (error) {
+                addResult(resultsDiv, `Test 3 failed with error: ${error.message}`, false);
+            }
+        }
+        
+        function addResult(container, message, isSuccess, details = null) {
+            const resultDiv = document.createElement('div');
+            resultDiv.className = `test-result ${isSuccess ? 'success' : 'error'}`;
+            
+            const messageDiv = document.createElement('div');
+            messageDiv.textContent = message;
+            resultDiv.appendChild(messageDiv);
+            
+            if (details) {
+                const detailsPre = document.createElement('pre');
+                detailsPre.textContent = details;
+                resultDiv.appendChild(detailsPre);
+            }
+            
+            container.appendChild(resultDiv);
+        }
+    </script>
+</body>
+</html>

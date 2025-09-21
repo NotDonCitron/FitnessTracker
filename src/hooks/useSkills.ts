@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import { SkillTree, SkillMilestone, SkillStats } from '../types/skills';
 import { storage } from '../utils/storage';
+import { getAllSets, getCompletedSetCount } from '../utils/workoutHelpers';
 
-export const useSkills = (onMilestoneReward?: () => void) => {
+export const useSkills = (onMilestoneReward?: (milestoneName: string) => void, onMilestoneComplete?: (milestone: any) => void) => {
   const [skills, setSkills] = useState<SkillTree[]>([]);
 
   useEffect(() => {
@@ -44,8 +45,52 @@ export const useSkills = (onMilestoneReward?: () => void) => {
     }
   };
 
+  // Helper functions to reduce complexity
+  const calculateWorkoutCount = (workouts: any[]) => {
+    return workouts.filter(w => w.completed).length;
+  };
+
+  const calculateSetCount = (workouts: any[]) => {
+    return workouts.reduce((total, w) => total + getCompletedSetCount(w), 0);
+  };
+
+  const calculateRepCount = (workouts: any[], exerciseId: string) => {
+    return workouts.reduce((total, w) => {
+      const exerciseSets = getAllSets(w, {completedOnly: true}).filter(s => s.exerciseId === exerciseId);
+      return total + exerciseSets.reduce((sum: number, s: any) => sum + s.reps, 0);
+    }, 0);
+  };
+
+  const calculateMaxWeight = (workouts: any[], exerciseId: string) => {
+    const exerciseSets = workouts.flatMap((w: any) =>
+      getAllSets(w, {completedOnly: true}).filter(s => s.exerciseId === exerciseId)
+    );
+    return exerciseSets.length > 0 ? Math.max(...exerciseSets.map((s: any) => s.weight)) : 0;
+  };
+
+  const triggerMilestoneReward = (milestone: SkillMilestone) => {
+    if (onMilestoneReward) {
+      setTimeout(() => onMilestoneReward(`${milestone.title}: ${milestone.targetValue} ${milestone.unit}`), 1000);
+    }
+  };
+
+  const showNotification = (milestone: SkillMilestone) => {
+    if ('Notification' in window && Notification.permission === 'granted') {
+      new Notification('🎉 Milestone Achieved!', {
+        body: `${milestone.title} - ${milestone.description}`,
+        icon: '/icon-192.png'
+      });
+    }
+  };
+
+  const updateSkillProgress = (skill: SkillTree) => {
+    const completedCount = skill.milestones.filter(m => m.completed).length;
+    skill.totalProgress = skill.milestones.length > 0
+      ? (completedCount / skill.milestones.length) * 100
+      : 0;
+  };
+
   const autoUpdateMilestones = () => {
-    // This function will be called after workouts to auto-detect achievements
     const workouts = storage.getWorkouts();
     const updatedSkills = [...skills];
     let hasUpdates = false;
@@ -55,64 +100,49 @@ export const useSkills = (onMilestoneReward?: () => void) => {
         if (!milestone.completed) {
           let newValue = milestone.currentValue;
 
+          // Calculate new value based on milestone unit
           switch (milestone.unit) {
             case 'workouts':
-              newValue = workouts.filter(w => w.completed).length;
+              newValue = calculateWorkoutCount(workouts);
               break;
             case 'sets':
-              newValue = workouts.reduce((total, w) => total + w.sets.filter(s => s.completed).length, 0);
+              newValue = calculateSetCount(workouts);
               break;
             case 'reps':
               if (milestone.exerciseId) {
-                newValue = workouts.reduce((total, w) => {
-                  return total + w.sets
-                    .filter(s => s.exerciseId === milestone.exerciseId && s.completed)
-                    .reduce((sum, s) => sum + s.reps, 0);
-                }, 0);
+                newValue = calculateRepCount(workouts, milestone.exerciseId);
               }
               break;
             case 'weight':
               if (milestone.exerciseId) {
-                const exerciseSets = workouts.flatMap(w => 
-                  w.sets.filter(s => s.exerciseId === milestone.exerciseId && s.completed)
-                );
-                if (exerciseSets.length > 0) {
-                  newValue = Math.max(...exerciseSets.map(s => s.weight));
-                }
+                newValue = calculateMaxWeight(workouts, milestone.exerciseId);
               }
               break;
           }
 
+          // Update milestone if value changed
           if (newValue !== milestone.currentValue) {
             milestone.currentValue = newValue;
             hasUpdates = true;
 
+            // Check if milestone is completed
             if (newValue >= milestone.targetValue && !milestone.completed) {
               milestone.completed = true;
               milestone.completedDate = new Date().toISOString();
+
+              triggerMilestoneReward(milestone);
+              showNotification(milestone);
               
-              // Trigger Pokemon reward for milestone
-              if (onMilestoneReward) {
-                setTimeout(() => onMilestoneReward(), 1000);
-              }
-              
-              // Show notification for achievement
-              if ('Notification' in window && Notification.permission === 'granted') {
-                new Notification('🎉 Milestone Achieved!', {
-                  body: `${milestone.title} - ${milestone.description}`,
-                  icon: '/icon-192.png'
-                });
+              // Call the milestone completion callback
+              if (onMilestoneComplete) {
+                onMilestoneComplete(milestone);
               }
             }
           }
         }
       });
 
-      // Update skill progress
-      const completedCount = skill.milestones.filter(m => m.completed).length;
-      skill.totalProgress = skill.milestones.length > 0 
-        ? (completedCount / skill.milestones.length) * 100 
-        : 0;
+      updateSkillProgress(skill);
     });
 
     if (hasUpdates) {
